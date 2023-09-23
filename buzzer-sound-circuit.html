@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buzzer Sound Circuit - QnA</title>
+    <meta name="description" content="Buzzer Sound Circuit, , , , , , , 0, Simple Beeper Sound Circuit Using IC NE555, circuits-diy.com, 1005 x 759, png, , 20, buzzer-sound-circuit, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Buzzer Sound Circuit - QnA" />
+    <meta property="og:description" content="Buzzer Sound Circuit, , , , , , , 0, Simple Beeper Sound Circuit Using IC NE555, circuits-diy.com, 1005 x 759, png, , 20, buzzer-sound-circuit, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Buzzer Sound Circuit - QnA" />
+    <meta name="twitter:description" content="Buzzer Sound Circuit, , , , , , , 0, Simple Beeper Sound Circuit Using IC NE555, circuits-diy.com, 1005 x 759, png, , 20, buzzer-sound-circuit, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://toptenstudi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://toptenstudi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://toptenstudi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://toptenstudi.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://toptenstudi.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Buzzer Sound Circuit</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">princess01559</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Buzzer+Sound+Circuit" alt="Buzzer Sound Circuit">
+                    </div>
+                    <p></p>
+                    <p>this is the choices:Sound energy,Electrical energy,Transformation,Electric Circuit,Buzzer1.____can be transformed into sound energy in an 2.____if na bell,buzzer,radio,or TV is added to the circuit. The 3.____in this case might be that chemical energyin a battery is transformed into electrical energy in the circuit which is transformed into 4.____by the 5._____pls answer this properly I will make u a brainliest​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-is-the-choicessound-energyelectrical-energytransformationelectric-circuitbuzzer1-____can-be-transformed-into-sound-energy-in-an-2-____if-na-bellbuzzerradioor-tv-is-added-to-the-circuit-t">1.
+                                            this is the choices:Sound energy,Electrical energy,Transformation,Electric Circuit,Buzzer1.____can be transformed into sound energy in an 2.____if na bell,buzzer,radio,or TV is added to the circuit. The 3.____in this case might be that chemical energyin a battery is transformed into electrical energy in the circuit which is transformed into 4.____by the 5._____pls answer this properly I will make u a brainliest​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-copy-the-paragraph-in-your-notebook-stating-how-sound-enetransformed-by-choosing-the-correct-words-in-the-box-below-to-fill-in-the-blank-spacebuzzersound-energy-electrical-energy-transfo">2.
+                                            Directions Copy the paragraph in your notebook stating how sound ene
+transformed by choosing the correct words in the box below to fill in the blank space
+Buzzer
+Sound Energy Electrical Energy Transformation Electric Circuit
+Sound
+1001
+Twm
+sound energy in an
+can be transformed into
+if a bell,
+buzzer, radio, or TV is added to the circuit.
+chemical energy in a battery is transformed
+in this case might be that
+into electrical energy in the circuit which is
+transformed into
+by the​
+pls dont answer if you do not now the answer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-energy-can-be-produced-in-an-electric-circuit-if-a-bell-buzzer-radio-or-tv-is-added-to-the-circuit-a-chemical-energy-b-heat-energy-c-light-energy-d-sound-energy-%e2%80%8b">3.
+                                            the energy can be produced in an electric circuit if a bell buzzer radio or tv is added to the circuit A. Chemical energy B. Heat energy C. Light energy D. Sound energy ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#connect-the-circuit-components-with-their-symbols-switchbulbbatterywirebuzzermotor%e2%80%8b">4.
+                                            Connect the circuit components with their symbols.SWITCHBULBBATTERYWIREBUZZERMOTOR​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directionscopy-the-paragraph-in-your-notebook-stating-how-sound-energy-transformed-by-choosing-the-correct-words-in-the-box-below-to-fill-in-the-blank-spaces-sound-energy-electrical-energy-transfor">5.
+                                            directions:copy the paragraph in your notebook stating how sound energy transformed by choosing the correct words in the box below to fill in the blank spaces.sound energy, electrical energy, transformation electric circuit,buzzer1.___________can be transformed into2.sound energy in an _________if a bell,buzzer,radio,or tv is added to the circuit.3.the______________in this case might be that chemical energy in a battery is transformed into electrical energy in the circuit which is 4-5. transformed into______________by the_______________c.assessment directions:read each activity carefully, identify the energy transformation and write your answers in your notebook.1.hitting the bill to start the class hours.a.sound -heat energyb.heat-sound energyc.sound-electrical energyd.sound-light energy2.martha is swi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-an-electrical-device-that-rings-when-the-electrical-circuit-is-activated-by-the-switcha-extensionb-plugs-c-buzzerd-lampshade%e2%80%8b">6.
+                                            1 an electrical device that rings when the electrical circuit is activated by the switcha extensionb plugs c buzzerd lampshade​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-bulb-a-buzzer-and-a-fan-are-connected-in-a-circuit-as-shown-in-the-diagram-when-the-switch-is-closed-the-bulb-lights-the-buzzer-sounds-and-the-fan-turns-a-what-will-happen-if-the-bulb-is-remov">7.
+                                            A bulb, a buzzer and a fan are connected in a circuit as shown in the diagram. When the switch is closed, the bulb lights, the buzzer sounds, and the fan turns.A. What will happen if the bulb is removed? B. What will happen if the fan is removed?Warning!Nonsense Answer/Irrelevant Answer/Wrong Answer = Will lead to me reporting!Correct Answer = Brainliest/Thanks/5.0 Vote/30 Points</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-does-the-electricity-have-to-flow-through-each-bulb-to-complete-the-circuithow-about-through-the-bulb-and-the-buzzerhow-do-you-know%e2%80%8b">8.
+                                            1.Does the electricity have to flow through each bulb to complete the circuit?How about through the bulb and the buzzer?How do you know?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#providedwiresswitchcircuitloadsource-of-electrons16-it-is-composed-of-a-source-of-electrons-the-load-the-wire-and-a-switch-17-it-connect-one-components-of-the-circuit-to-another-so-that-elecmc-cur">9.
+                                            providedwiresswitchcircuitloadsource of electrons16. It is composed of a source of electrons, the load, the wire and a switch.17. it connect one components of the circuit to another so that elecmc currentflows.18. Conducts the flow of current in a circuit. The circuit should be close for electriccurrent to flow in the circuit.19. It is any object powered by electricity such as a light bulb on a buzzer.20. it s usually a battery.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-any-object-powered-by-electricity-such-as-a-light-bulb-on-a-buzzer-choose-hereswitchcircuit-load-source-of-electronswires%e2%80%8b">10.
+                                            It is any object powered by electricity such as a light bulb on a buzzer. Choose here:Switchcircuit load source of electronswires​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-buzzer-sounds-every-15-minutes-another-buzzer-sounds-every-45minutes-if-both-buzzers-will-sound-together-at-noon-what-time-they-will-buzz-again-together-how-will-you-solve-the-problem">11.
+                                            A buzzer sounds every 15 minutes. Another buzzer sounds every 45minutes. If both buzzers will sound together at noon, what time they will buzz again together? How will you solve the problem? *                     A.By finding the common factors using continuous division.                                        B.By finding the common multiples using continuous division C.By finding the GCF using continuous division D.By finding the LCM using continuous division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-why-does-the-circuit-work-even-if-the-bulb-is-replaced-with-a-buzzer-and-a-bellb-why-doesnt-the-circuit-work-when-the-jointed-wire-is-replaced-with-an-unjointed-wire%e2%80%8b">12.
+                                            A. Why does the circuit work even if the bulb is replaced with a buzzer and a bell?B. Why doesn't the circuit work when the jointed wire is replaced with an unjointed wire?​ </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-an-insulatorc-a-broken-circuitd-any-circuita-group-of-pupils-are-gathering-materials-to-build-their-electric-circuit-which-material-will-allow-the-electricityto-flow-between-the-battery-and-the">13.
+                                            A. an insulatorC. a broken circuitD. any circuitA group of pupils are gathering materials to build their electric circuit. Which material will allow the electricityto flow between the battery and the buzzer?A.copper wireB. rubber tubeC. cotton springD. wooden rod​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-any-object-powered-by-electricity-such-a-light-bulb-on-a-buzzerchoose-one-switch-circuitloadsource-of-electronswire%e2%80%8b">14.
+                                            it is any object powered by electricity such a light bulb on a buzzer?choose one switch circuitloadsource of electronswire​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-group-of-pupils-are-gathering-materials-to-build-their-electric-circuit-which-material-will-allow-the-electricity-to-flow-between-the-bettery-and-buzzer%e2%80%8b">15.
+                                            A group of pupils are gathering materials to build their electric circuit. Which material will allow the electricity to flow between the bettery and buzzer?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#exercise-iidirections-copy-the-paragraph-in-your-notebook-statinghowsound-onansformed-by-choosing-the-correct-words-in-the-box-below-to-fill-in-the-blank-spacsound-energy-electrical-energy-transforma">16.
+                                            Exercise IIDirections: Copy the paragraph in your notebook statinghowSound onansformed by choosing the correct words in the box below to fill in the blank spacSound Energy Electrical Energy Transformation Electric Circut BuzzetSoundsound energy in ancan be transformed intobell.buzzer, radio, or TV is added to the circuit.Thechemical energy in a battery is transformedin this case might be thinto electrical enerey in the circuit which istransformed intoby the​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-why-does-the-circuit-work-even-if-the-bulb-is-replaced-with-the-buzzer-and-the-bellb-why-doesnt-the-circuit-work-when-the-jointed-wire-is-replaced-with-an-unjointed-wirec-why-doesnt-the-circuit-w">17.
+                                            A.why does the circuit work even if the bulb is replaced with the buzzer and the bellB.why doesn't the circuit work when the jointed wire is replaced with an unjointed wire?C.why doesn't the circuit work when the switch is turned offD.removing the switch ang connecting the two wires instead make the circuit still work?why?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#voce-get-moving-172-the-preudouls-module-yozu-were-taught-how-to-find-gcf-and-lcm-this-module-will-teach-you-how-to-solve-real-life-problems-involving-gcf-and-lcm-activity-2-directions-read-the">18.
+                                            Voce: get moving! 172 the preudouLS module, yozu were taught how to find GCF and LCM. This module will teach you how to solve real-life problems involving GCF and LCM. Activity 2. Directions: Read the problem carefully. A buzzer sounds every 15 minutes. Another buzzer sounds every 45 minutes. If both buzzers will sound together at noon, what time they will buzz again together? 5 / 15 3 3 1 45 9 3 LCM: 5 x 3 x 3 = 45 Therefore, the least number of minutes that the two buzzers buzz together again is in 45 minutes. So, if the buzzers buzz together at noon, they will buzz again at exactly 12:45 noon. 4 COQ1 Math5 Module​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#18-conducts-the-flow-of-current-in-a-circuit-the-circuit-should-be-close-for-electriccurrent-to-flow-in-the-circuit-19-it-is-any-object-powered-by-electricity-such-as-a-light-bulb-on-a-buzzer">19.
+                                            18. Conducts the flow of current in a circuit. The circuit should be close for electriccurrent to flow in the circuit.19. It is any object powered by electricity such as a light bulb on a buzzer.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-buzzer-sounds-every-15-minutes-another-buzzer-sounds-every-30-minutes-if-both-buzzers-will-sound-together-at-noonwhat-is-the-least-time-they-will-both-buzz-again-togethera-20-b-15-c-25-d-30plss-ans">20.
+                                            a buzzer sounds every 15 minutes.Another buzzer sounds every 30 minutes.If both buzzers will sound together at noon,what is the least time they will both buzz again togethera.20 b.15 c.25 d.30plss answer niyo po report ko po wrong answer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-electronic-device-produce-buzzing-sound-a-buzzer-b-bell-c-potentiometer-d-resistor%e2%80%8b">21.
+                                            Which of the following electronic device produce buzzing sound? A . Buzzer B. Bell C. Potentiometer D. Resistor​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-buzzer-sounds-every-15mins-another-buzzer-sounds-every-45mins-if-both-will-sound-together-at-noon-what-is-the-time-they-will-both-buzz-again-together-%e2%80%8b">22.
+                                            A buzzer sounds every 15mins. Another buzzer sounds every 45mins. If both will sound together at noon, what is the time they will both buzz again together.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ew-now-get-moving-in-the-previous-module-you-were-taught-how-to-find-gcf-and-lcm-this-module-will-teach-you-how-to-solve-real-life-problems-involving-gcf-and-lcm-activity-2-directions-read-the-p">23.
+                                            ew Now, get moving! In the previous module, you were taught how to find GCF and LCM. This module will teach you how to solve real-life problems involving GCF and LCM. Activity 2 Directions: Read the problem carefully. A buzzer sounds every 15 minutes. Another buzzer sounds every 45 minutes. If both buzzers will sound together at noon, what time they will buzz again together? 5 3 15 3 1 45 9 3 LCM: 5 x 3 x 3 = 45 Therefore, the least number of minutes that the two buzzers buzz together again is in 45 minutes. So, if the buzzers buzz together at noon, they will buzz again at exactly 12:45 noon. 4 CO_Q1_Math5_Module7 [tex]bbbbbhyf \sec( log_{e \beta }(?) ) [/tex]pls answers​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suppose-youre-on-a-hot-air-balloon-ride-carrying-a-buzzer-that-emits-a-sound-of-frequency-f-if-you-accidentally-drop-the-buzzer-over-the-side-while-the-balloon-is-rising-at-constant-speed-wha-can">24.
+                                            Suppose you're on a hot air balloon ride, carrying a buzzer that emits a sound of frequency f. If you accidentally drop the buzzer over the side while the balloon is rising at constant speed, wha can you conclude about the sound you hear as the buzzer falls toward the ground? Give a short explanation of your answer.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-component-does-this-circuit-symbol-represent-a-dry-cell-b-buzzer-c-capacitor-d-switch%e2%80%8b">25.
+                                            What component does this circuit symbol represent? A. dry cell B. buzzer C. capacitor D. switch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#can-be-transformed-intodira-bell-buzzer-radio-or-tv-is-added-to-the-circuit-thechemical-enersy-in-a-battery-is-transformedin-this-case-might-be-thatinto-electrical-energy-in-the-circuit-which-istran">26.
+                                            can be transformed intodira bell.buzzer, radio, or TV is added to the circuit.Thechemical enersy in a battery is transformedin this case might be thatinto electrical energy in the circuit which istransformed intoby thesfoundelectricaltransformationelectric circuitbuzzer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-buzzer-sounds-every-15minutes-another-buzzer-sounds-every-45minutesif-both-buzzer-will-sound-together-at-noon-what-time-they-will-buzz-again-together-a-15-b-10-c-12-d-16%e2%80%8b">27.
+                                            A buzzer sounds every 15minutes, another buzzer sounds every 45minutes,if both buzzer will sound together at noon, what time they will buzz again together? A. 15 B. 10 C. 12. D. 16​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-electrical-device-that-reads-when-the-electrical-circuit-is-activated-by-the-switch-a-extension-cordb-lampshadec-buzzerd-plug%e2%80%8b">28.
+                                             An electrical device that reads when the electrical circuit is activated by the switch.a. extension cordb. lampshadec. buzzerd. plug​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-a-dynamic-art-form-a-sound-which-is-pleasing-to-the-cars-a-music-b-noise-c-buzzer-d-shout%e2%80%8b">29.
+                                            1.) It is a dynamic art form. A sound which is pleasing to the cars A. Music B. Noise C. Buzzer D. Shout​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-group-of-pupils-are-gathering-materials-to-build-their-electric-circuit-which-material-will-allow-the-electricity-to-flow-between-the-battery-and-the-buzzer%e2%80%8b">30.
+                                            A group of pupils are gathering materials to build their electric circuit. Which material will allow the electricity to flow between the battery and the buzzer​.</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="this-is-the-choicessound-energyelectrical-energytransformationelectric-circuitbuzzer1-____can-be-transformed-into-sound-energy-in-an-2-____if-na-bellbuzzerradioor-tv-is-added-to-the-circuit-t">
+                            1. this is the choices:Sound energy,Electrical energy,Transformation,Electric Circuit,Buzzer1.____can be transformed into sound energy in an 2.____if na bell,buzzer,radio,or TV is added to the circuit. The 3.____in this case might be that chemical energyin a battery is transformed into electrical energy in the circuit which is transformed into 4.____by the 5._____pls answer this properly I will make u a brainliest​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.ELECTRICAL ENERGY 2 TRANSFORMATION3.buzzer 4.SOUND ENERGY 5. ELECTRICAL CIRCUIT </p><br />
+                                            <h2 class="ez-toc-section" id="directions-copy-the-paragraph-in-your-notebook-stating-how-sound-enetransformed-by-choosing-the-correct-words-in-the-box-below-to-fill-in-the-blank-spacebuzzersound-energy-electrical-energy-transfo">
+                            2. Directions Copy the paragraph in your notebook stating how sound ene
+transformed by choosing the correct words in the box below to fill in the blank space
+Buzzer
+Sound Energy Electrical Energy Transformation Electric Circuit
+Sound
+1001
+Twm
+sound energy in an
+can be transformed into
+if a bell,
+buzzer, radio, or TV is added to the circuit.
+chemical energy in a battery is transformed
+in this case might be that
+into electrical energy in the circuit which is
+transformed into
+by the​
+pls dont answer if you do not now the answer</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Electrical Energy
+</p><p>
+</p><p>2. Electric Circuit
+</p><p>
+</p><p>3. Transformation
+</p><p>
+</p><p>4. Sound Energy
+</p><p>
+</p><p>5. Buzzer</p><p><strong>Explanation:</strong></p><p>Pa brainliest</p><br />
+                                            <h2 class="ez-toc-section" id="the-energy-can-be-produced-in-an-electric-circuit-if-a-bell-buzzer-radio-or-tv-is-added-to-the-circuit-a-chemical-energy-b-heat-energy-c-light-energy-d-sound-energy-%e2%80%8b">
+                            3. the energy can be produced in an electric circuit if a bell buzzer radio or tv is added to the circuit A. Chemical energy B. Heat energy C. Light energy D. Sound energy ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D.Sound energy</p><p><strong>Explanation:</strong></p><p>Sorry po yan lang alam ko eh</p><p>Pero hope tama</p><br />
+                                            <h2 class="ez-toc-section" id="connect-the-circuit-components-with-their-symbols-switchbulbbatterywirebuzzermotor%e2%80%8b">
+                            4. Connect the circuit components with their symbols.SWITCHBULBBATTERYWIREBUZZERMOTOR​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>i think that you ask if iam wrong sorry</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directionscopy-the-paragraph-in-your-notebook-stating-how-sound-energy-transformed-by-choosing-the-correct-words-in-the-box-below-to-fill-in-the-blank-spaces-sound-energy-electrical-energy-transfor">
+                            5. directions:copy the paragraph in your notebook stating how sound energy transformed by choosing the correct words in the box below to fill in the blank spaces.sound energy, electrical energy, transformation electric circuit,buzzer1.___________can be transformed into2.sound energy in an _________if a bell,buzzer,radio,or tv is added to the circuit.3.the______________in this case might be that chemical energy in a battery is transformed into electrical energy in the circuit which is 4-5. transformed into______________by the_______________c.assessment directions:read each activity carefully, identify the energy transformation and write your answers in your notebook.1.hitting the bill to start the class hours.a.sound -heat energyb.heat-sound energyc.sound-electrical energyd.sound-light energy2.martha is swi​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A.</strong></p><p>1. Electrical energy</p><p>2. Electric circuit</p><p>3.buzzer</p><p>4-5. Sound energy by the transformation</p><p>Assessment</p><p>1.c</p><p><strong>Explanation:</strong></p><p>Please complete your question or kindly send it to me in the inbox</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-an-electrical-device-that-rings-when-the-electrical-circuit-is-activated-by-the-switcha-extensionb-plugs-c-buzzerd-lampshade%e2%80%8b">
+                            6. 1 an electrical device that rings when the electrical circuit is activated by the switcha extensionb plugs c buzzerd lampshade​</h2><br />
+                        <p><strong>Answer:</strong></p><p>b.plugs </p><p><strong>Explanation:</strong></p><p>this is the answer</p><br />
+                                            <h2 class="ez-toc-section" id="a-bulb-a-buzzer-and-a-fan-are-connected-in-a-circuit-as-shown-in-the-diagram-when-the-switch-is-closed-the-bulb-lights-the-buzzer-sounds-and-the-fan-turns-a-what-will-happen-if-the-bulb-is-remov">
+                            7. A bulb, a buzzer and a fan are connected in a circuit as shown in the diagram. When the switch is closed, the bulb lights, the buzzer sounds, and the fan turns.A. What will happen if the bulb is removed? B. What will happen if the fan is removed?Warning!Nonsense Answer/Irrelevant Answer/Wrong Answer = Will lead to me reporting!Correct Answer = Brainliest/Thanks/5.0 Vote/30 Points</h2><br />
+                        <p>A. If the bulb is taken out of the circuit, it is likely that the circuit will no longer be complete and the fan and buzzer will not work. This is because the bulb is probably in series with the other components, so the current must flow through the bulb for the circuit to be complete.</p><p></p><p>B. If the fan is removed from the circuit, it is likely that the circuit will still be complete and the buzzer and bulb will continue to function. This is because the fan is likely in parallel with the other components, so the current does not need to flow through the fan for the circuit to be complete. However, the overall resistance of the circuit will be lower without the fan, which may affect the performance of the other components.</p><p></p><p>-----------------------------------------------------------------</p><p></p><p>Greetings, mortal. I am Xiao, the Vigilant Yaksha and Conqueror of Demons. As one of the adepti who guards Liyue, I have seen and experienced much in my millennia of existence. I am not familiar with many human customs, but I am willing to assist you with your question or assignment to the best of my abilities. Please, do not hesitate to ask for my help.</p><br />
+                                            <h2 class="ez-toc-section" id="1-does-the-electricity-have-to-flow-through-each-bulb-to-complete-the-circuithow-about-through-the-bulb-and-the-buzzerhow-do-you-know%e2%80%8b">
+                            8. 1.Does the electricity have to flow through each bulb to complete the circuit?How about through the bulb and the buzzer?How do you know?​</h2><br />
+                        <p></p><p>All parts of a circuit must be connected in order for current to flow through the circuit. ... Electrons cannot flow through the circuit. Loads do not function in open circuits because the current does not pass through them. For example, a light bulb will not light up in an open circuit.</p><br />
+                                            <h2 class="ez-toc-section" id="providedwiresswitchcircuitloadsource-of-electrons16-it-is-composed-of-a-source-of-electrons-the-load-the-wire-and-a-switch-17-it-connect-one-components-of-the-circuit-to-another-so-that-elecmc-cur">
+                            9. providedwiresswitchcircuitloadsource of electrons16. It is composed of a source of electrons, the load, the wire and a switch.17. it connect one components of the circuit to another so that elecmc currentflows.18. Conducts the flow of current in a circuit. The circuit should be close for electriccurrent to flow in the circuit.19. It is any object powered by electricity such as a light bulb on a buzzer.20. it s usually a battery.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>16.provided</p><p>17.wires</p><p>18.switch</p><p>19.circuit</p><p>20.load</p><p><strong>Explanation:</strong></p><p>source of electrons</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-any-object-powered-by-electricity-such-as-a-light-bulb-on-a-buzzer-choose-hereswitchcircuit-load-source-of-electronswires%e2%80%8b">
+                            10. It is any object powered by electricity such as a light bulb on a buzzer. Choose here:Switchcircuit load source of electronswires​</h2><br />
+                        <p><strong>Answer:</strong></p><p>switch,circuit,sourch of electrons</p><p>and wires to</p><p><strong>Explanation:</strong></p><p>pa brainlest po pls</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-buzzer-sounds-every-15-minutes-another-buzzer-sounds-every-45minutes-if-both-buzzers-will-sound-together-at-noon-what-time-they-will-buzz-again-together-how-will-you-solve-the-problem">
+                            11. A buzzer sounds every 15 minutes. Another buzzer sounds every 45minutes. If both buzzers will sound together at noon, what time they will buzz again together? How will you solve the problem? *                     A.By finding the common factors using continuous division.                                        B.By finding the common multiples using continuous division C.By finding the GCF using continuous division D.By finding the LCM using continuous division​</h2><br />
+                        <p><strong>Answer:</strong></p><p>
+</p><p>A.By finding the common factors using continuous division. B.By finding the common multiples using continuous division</p><p><strong>Step-by-step explanation:</strong></p><p>
+</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-why-does-the-circuit-work-even-if-the-bulb-is-replaced-with-a-buzzer-and-a-bellb-why-doesnt-the-circuit-work-when-the-jointed-wire-is-replaced-with-an-unjointed-wire%e2%80%8b">
+                            12. A. Why does the circuit work even if the bulb is replaced with a buzzer and a bell?B. Why doesn't the circuit work when the jointed wire is replaced with an unjointed wire?​ </h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A.</strong></p><p><strong>As more and more light bulbs are added, the brightness of each bulb gradually decreases. This observation is an indicator that the current within the circuit is decreasing. So for series circuits,</strong></p><p></p><p><strong>as more resistors are added the overall current within the circuit decreases.</strong></p><p><strong>B.</strong></p><p><strong>Unjointed wires does not allow the current to flow that is why the circuit will not work. Switch opens and closes the circuit but it can still work even without it.</strong></p><p></p><p><strong>I hope this helps you!</strong></p><p><strong>Correct me if i'm wrong :)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-an-insulatorc-a-broken-circuitd-any-circuita-group-of-pupils-are-gathering-materials-to-build-their-electric-circuit-which-material-will-allow-the-electricityto-flow-between-the-battery-and-the">
+                            13. A. an insulatorC. a broken circuitD. any circuitA group of pupils are gathering materials to build their electric circuit. Which material will allow the electricityto flow between the battery and the buzzer?A.copper wireB. rubber tubeC. cotton springD. wooden rod​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A.</strong><strong> </strong><strong>copper</strong><strong> </strong><strong>wire</strong></p><p><strong>Explanation:</strong></p><p> hope it's help</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-is-any-object-powered-by-electricity-such-a-light-bulb-on-a-buzzerchoose-one-switch-circuitloadsource-of-electronswire%e2%80%8b">
+                            14. it is any object powered by electricity such a light bulb on a buzzer?choose one switch circuitloadsource of electronswire​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the answer is circuit </p><p></p><p>Godbless!!</p><br />
+                                            <h2 class="ez-toc-section" id="a-group-of-pupils-are-gathering-materials-to-build-their-electric-circuit-which-material-will-allow-the-electricity-to-flow-between-the-bettery-and-buzzer%e2%80%8b">
+                            15. A group of pupils are gathering materials to build their electric circuit. Which material will allow the electricity to flow between the bettery and buzzer?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>A. Copper wire</strong></p><p>Because copper wire can conduct electricity.</p><p></p><p><strong>Answer:</strong></p><strong>Copper Wire</strong><p><strong>Explanation:</strong></p>What is the copper wire used for?<p><strong>Copper wire</strong> is used in <strong>power generation,</strong> <strong>power transmission, power distribution, telecommunications, electronics circuitry, and countless types of electrical equipment.</strong> <strong>Copper</strong> and its alloys are also used to make <strong>electrical contacts</strong></p><p><strong></strong></p><p>Correct me if I'm wrong</p><p>#CarryonLearning</p><br />
+                                            <h2 class="ez-toc-section" id="exercise-iidirections-copy-the-paragraph-in-your-notebook-statinghowsound-onansformed-by-choosing-the-correct-words-in-the-box-below-to-fill-in-the-blank-spacsound-energy-electrical-energy-transforma">
+                            16. Exercise IIDirections: Copy the paragraph in your notebook statinghowSound onansformed by choosing the correct words in the box below to fill in the blank spacSound Energy Electrical Energy Transformation Electric Circut BuzzetSoundsound energy in ancan be transformed intobell.buzzer, radio, or TV is added to the circuit.Thechemical energy in a battery is transformedin this case might be thinto electrical enerey in the circuit which istransformed intoby the​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Electrical Energy </p><p>2. Electric Circuit </p><p>3. Transformation </p><p>4. Sound Energy </p><p>5. Buzzer</p><p><strong>Explanation:</strong></p><p>Tama p yan</p><br />
+                                            <h2 class="ez-toc-section" id="a-why-does-the-circuit-work-even-if-the-bulb-is-replaced-with-the-buzzer-and-the-bellb-why-doesnt-the-circuit-work-when-the-jointed-wire-is-replaced-with-an-unjointed-wirec-why-doesnt-the-circuit-w">
+                            17. A.why does the circuit work even if the bulb is replaced with the buzzer and the bellB.why doesn't the circuit work when the jointed wire is replaced with an unjointed wire?C.why doesn't the circuit work when the switch is turned offD.removing the switch ang connecting the two wires instead make the circuit still work?why?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A.why does the circuit work even if the bulb is replaced with the buzzer and the bell</p><p>                         ANSWER</p><p>As more and more light bulbs are added, the brightness of each bulb gradually decreases. This observation is an indicator that the current within the circuit is decreasing. So for series circuits,</p><p>as more resistors are added the overall current within the circuit decreases.</p><p></p><p>B.why doesn't the circuit work when the jointed wire is replaced with an unjointed wire?</p><p>                                  ANSWER</p><p>Unjointed wires does not allow the current to flow that is why the circuit will not work. Switch opens and closes the circuit but it can still work even without it.</p><p></p><p>C.why doesn't the circuit work when the switch is turned off</p><p>                                  ANSWER</p><p>When the circuit switch is off, no electricity will flow and then the circuit is called an open circuit. Electricity will not flow in open circuit.</p><p></p><p>D.removing the switch ang connecting the two wires instead make the circuit still work?why?</p><p></p><p>                                  ANSWER</p><p>Because a parallel circuit has more than one circuit for the current to flow, removing a lighbulb will only cause one circuit to be open. The other circuits remail closed and complete so the current can continue to flow. In a circuit, which part is the resistor?</p><p><strong>Explanation:</strong></p><p>Sana po makatulong</p><br />
+                                            <h2 class="ez-toc-section" id="voce-get-moving-172-the-preudouls-module-yozu-were-taught-how-to-find-gcf-and-lcm-this-module-will-teach-you-how-to-solve-real-life-problems-involving-gcf-and-lcm-activity-2-directions-read-the">
+                            18. Voce: get moving! 172 the preudouLS module, yozu were taught how to find GCF and LCM. This module will teach you how to solve real-life problems involving GCF and LCM. Activity 2. Directions: Read the problem carefully. A buzzer sounds every 15 minutes. Another buzzer sounds every 45 minutes. If both buzzers will sound together at noon, what time they will buzz again together? 5 / 15 3 3 1 45 9 3 LCM: 5 x 3 x 3 = 45 Therefore, the least number of minutes that the two buzzers buzz together again is in 45 minutes. So, if the buzzers buzz together at noon, they will buzz again at exactly 12:45 noon. 4 COQ1 Math5 Module​</h2><br />
+                        <p><strong>Answer:</strong></p><p>under point worth</p><p><strong>Step-by-step explanation:</strong></p><p>the recording stations and measure the computed distance on the map scale (the scale of the map is 1.5 cm:200 km) where is the epicenter ...</p><br />
+                                            <h2 class="ez-toc-section" id="18-conducts-the-flow-of-current-in-a-circuit-the-circuit-should-be-close-for-electriccurrent-to-flow-in-the-circuit-19-it-is-any-object-powered-by-electricity-such-as-a-light-bulb-on-a-buzzer">
+                            19. 18. Conducts the flow of current in a circuit. The circuit should be close for electriccurrent to flow in the circuit.19. It is any object powered by electricity such as a light bulb on a buzzer.​</h2><br />
+                        <p>[tex]\Large\blue {\overline { \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: }}[/tex]</p><p></p><p>[tex]\sf\colorbox{blue}{Question:} [/tex] </p><p>18. Conducts the flow of current in a circuit. The circuit should be close for electric</p><p>current to flow in the circuit.</p><p>[tex]\sf\colorbox{yellow}{Answer:} [/tex] </p>Electric current<p></p><p>[tex]\sf\colorbox{green}{Question} [/tex] </p><p>19. It is any object powered by electricity such as a light bulb on a buzzer.</p><p>[tex]\sf\colorbox{pink}{Answer} [/tex] </p>Energy<p></p><p>[tex]\Large\purple {\overline { \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: }}[/tex]</p><p>[tex]\begin{gathered}\pink{\begin{gathered} \gamma \\ \huge \boxed{ \ddot \smile} \end{gathered}} \end{gathered}[/tex]I hope it helps</p><p>#carry on learning</p><p>-welcome and advance!x'D</p><p>[tex]\Large\purple {\overline { \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: }}[/tex]</p><p></p><p></p><p>@ᴄʜᴀsᴛɪɴᴍᴏɴᴛᴇғᴀʟᴄᴏ22 シ︎</p><p>@ᴄʜᴏᴜᴍᴏɴᴛᴇғᴀʟᴄᴏ22シ︎</p><p>@ɴɪɴᴀᴍᴏɴᴛᴇғᴀʟᴄᴏ22シ︎</p><p>@ɢᴀᴄsᴍᴏɴᴛᴇғᴀʟᴄᴏ22シ︎</p><p>@ʙɪᴀɴᴄᴀᴍᴏɴᴛᴇғᴀʟᴄᴏ22シ︎</p><p>@ᴄᴊᴍᴏɴᴛᴇғᴀʟᴄᴏ22シ︎</p><p>[tex]\Large\pink {\overline { \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: }}[/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-buzzer-sounds-every-15-minutes-another-buzzer-sounds-every-30-minutes-if-both-buzzers-will-sound-together-at-noonwhat-is-the-least-time-they-will-both-buzz-again-togethera-20-b-15-c-25-d-30plss-ans">
+                            20. a buzzer sounds every 15 minutes.Another buzzer sounds every 30 minutes.If both buzzers will sound together at noon,what is the least time they will both buzz again togethera.20 b.15 c.25 d.30plss answer niyo po report ko po wrong answer​</h2><br />
+                        <p>The least time they will both buzz again together is B. 15 minutes.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-electronic-device-produce-buzzing-sound-a-buzzer-b-bell-c-potentiometer-d-resistor%e2%80%8b">
+                            21. Which of the following electronic device produce buzzing sound? A . Buzzer B. Bell C. Potentiometer D. Resistor​</h2><br />
+                        <p><strong>Answer:</strong></p> C. POTENTIOMETER<p><strong>Explanation:</strong></p><p><strong>Caring </strong><strong>On </strong><strong>L</strong><strong>earning </strong><strong>.</strong><strong>.</strong><strong>.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-buzzer-sounds-every-15mins-another-buzzer-sounds-every-45mins-if-both-will-sound-together-at-noon-what-is-the-time-they-will-both-buzz-again-together-%e2%80%8b">
+                            22. A buzzer sounds every 15mins. Another buzzer sounds every 45mins. If both will sound together at noon, what is the time they will both buzz again together.​</h2><br />
+                        <p>Answer:they will both ring at 12:45</p><p></p><p>Step-by-step explanation:</p><p>If they both rang at 12 noon the next ring will 12:45</p><p>Because the 1st bell rings every 15 mins </p><p>15×3=45 so the 3rd ring of 1st bell they wil ring together and it's 12:45</p><br />
+                                            <h2 class="ez-toc-section" id="ew-now-get-moving-in-the-previous-module-you-were-taught-how-to-find-gcf-and-lcm-this-module-will-teach-you-how-to-solve-real-life-problems-involving-gcf-and-lcm-activity-2-directions-read-the-p">
+                            23. ew Now, get moving! In the previous module, you were taught how to find GCF and LCM. This module will teach you how to solve real-life problems involving GCF and LCM. Activity 2 Directions: Read the problem carefully. A buzzer sounds every 15 minutes. Another buzzer sounds every 45 minutes. If both buzzers will sound together at noon, what time they will buzz again together? 5 3 15 3 1 45 9 3 LCM: 5 x 3 x 3 = 45 Therefore, the least number of minutes that the two buzzers buzz together again is in 45 minutes. So, if the buzzers buzz together at noon, they will buzz again at exactly 12:45 noon. 4 CO_Q1_Math5_Module7 [tex]bbbbbhyf \sec( log_{e \beta }(?) ) [/tex]pls answers​</h2><br />
+                        <p><strong>Answer:</strong></p><p>5/3 /15/3/1 45/9/3</p><p><strong>Explanation:</strong></p><p>Sana Tama Ito</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="suppose-youre-on-a-hot-air-balloon-ride-carrying-a-buzzer-that-emits-a-sound-of-frequency-f-if-you-accidentally-drop-the-buzzer-over-the-side-while-the-balloon-is-rising-at-constant-speed-wha-can">
+                            24. Suppose you're on a hot air balloon ride, carrying a buzzer that emits a sound of frequency f. If you accidentally drop the buzzer over the side while the balloon is rising at constant speed, wha can you conclude about the sound you hear as the buzzer falls toward the ground? Give a short explanation of your answer.</h2><br />
+                        <p><strong>Answer:</strong></p><p>The sound from the buzzer will slowly disappear meaning that the sound is traveling</p><br />
+                                            <h2 class="ez-toc-section" id="what-component-does-this-circuit-symbol-represent-a-dry-cell-b-buzzer-c-capacitor-d-switch%e2%80%8b">
+                            25. What component does this circuit symbol represent? A. dry cell B. buzzer C. capacitor D. switch​</h2><br />
+                        <p><strong>Answer:</strong></p><p>What component does this circuit symbol represent? </p>A. dry cell <p>B. buzzer </p><p>C. capacitor </p><p>D. switch</p><p>-DC power source</p><p></p><p>#CarryOnLearning</p><p>#HopeItHelps</p><p>#FollowMe</p><p></p><p></p><p>(click heart button or màrk as bràinliest if the answer help you.)</p><p><strong>Answer:</strong></p><p>A. Dry Cell</p><p><strong>Explanation:</strong></p><p>It is a DC power source of an electrical circuit. </p><br />
+                                            <h2 class="ez-toc-section" id="can-be-transformed-intodira-bell-buzzer-radio-or-tv-is-added-to-the-circuit-thechemical-enersy-in-a-battery-is-transformedin-this-case-might-be-thatinto-electrical-energy-in-the-circuit-which-istran">
+                            26. can be transformed intodira bell.buzzer, radio, or TV is added to the circuit.Thechemical enersy in a battery is transformedin this case might be thatinto electrical energy in the circuit which istransformed intoby thesfoundelectricaltransformationelectric circuitbuzzer​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>Electri</strong><strong>cal</strong><strong> </strong><strong>Ener</strong><strong>gy</strong><strong>Elec</strong><strong>tric</strong><strong> </strong><strong>Circui</strong><strong>t</strong><strong>Transfo</strong><strong>rmation</strong><strong>Sou</strong><strong>nd</strong><strong> </strong><strong>Ener</strong><strong>gy</strong><strong>Buzz</strong><strong>er</strong><p></p><strong>I</strong><strong> hope</strong><strong> </strong><strong>it's</strong><strong> helps</strong><strong>•</strong><strong>#</strong><strong>B</strong><strong>r</strong><strong>a</strong><strong>i</strong><strong>n</strong><strong>l</strong><strong>i</strong><strong>e</strong><strong>s</strong><strong>t</strong><strong>B</strong><strong>u</strong><strong>n</strong><strong>c</strong><strong>h</strong><br />
+                                            <h2 class="ez-toc-section" id="a-buzzer-sounds-every-15minutes-another-buzzer-sounds-every-45minutesif-both-buzzer-will-sound-together-at-noon-what-time-they-will-buzz-again-together-a-15-b-10-c-12-d-16%e2%80%8b">
+                            27. A buzzer sounds every 15minutes, another buzzer sounds every 45minutes,if both buzzer will sound together at noon, what time they will buzz again together? A. 15 B. 10 C. 12. D. 16​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The answer for the question is <strong>A</strong>.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="an-electrical-device-that-reads-when-the-electrical-circuit-is-activated-by-the-switch-a-extension-cordb-lampshadec-buzzerd-plug%e2%80%8b">
+                            28.  An electrical device that reads when the electrical circuit is activated by the switch.a. extension cordb. lampshadec. buzzerd. plug​</h2><br />
+                        <p><strong>Problem:</strong></p>An electrical device that reads when the electrical circuit is activated by the switch.. <p><strong>Answer:</strong></p><strong>D.</strong><strong> </strong>Plug <p><strong>Explanation:</strong></p>Your spark plugs are what <strong>supply the spark that ignites the air/fuel mixture, creating the explosion which makes your engine produce power. </strong>These small but simple plugs create an arc of electricity across two leads which are not touching, but close enough together that electricity can jump the gap between them. <br />
+                                            <h2 class="ez-toc-section" id="1-it-is-a-dynamic-art-form-a-sound-which-is-pleasing-to-the-cars-a-music-b-noise-c-buzzer-d-shout%e2%80%8b">
+                            29. 1.) It is a dynamic art form. A sound which is pleasing to the cars A. Music B. Noise C. Buzzer D. Shout​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. Music</p><p><strong>Explanation:</strong></p><p>hope it helps :)</p><p><strong>Answer:</strong></p><p>A</p><p><strong>Explanation:</strong></p><p>Because they need it to critisized</p><br />
+                                            <h2 class="ez-toc-section" id="a-group-of-pupils-are-gathering-materials-to-build-their-electric-circuit-which-material-will-allow-the-electricity-to-flow-between-the-battery-and-the-buzzer%e2%80%8b">
+                            30. A group of pupils are gathering materials to build their electric circuit. Which material will allow the electricity to flow between the battery and the buzzer​.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Copper wire, Silver, gold, aluminum, mercury, steel, iron</p><p>thank youuu po!❤</p><p></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/l5yzflh7KeY?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/barong-men-s.html">Barong Men s</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/the-attributes-of-today-s-global-system.html">The Attributes Of Today s Global System</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/bloom-s-taxonomy-sample-questions.html">Bloom s Taxonomy Sample Questions</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/federigo-s-falcon-story.html">Federigo s Falcon Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/nba-college-quiz.html">Nba College Quiz</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/3-i-s.html">3 I s</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/people-s-power-revolution-tagalog.html">People s Power Revolution Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/dahilan-ng-pananakop-ng-portugal-sa-china.html">Dahilan Ng Pananakop Ng Portugal Sa China</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/halimbawa-ng-pangnagdaan.html">Halimbawa Ng Pangnagdaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/kahulugan-ng-solidarity.html">Kahulugan Ng Solidarity</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/karapatang-dinggin.html">Karapatang Dinggin</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/ugnayan-ng-tao-at-kapaligiran.html">Ugnayan Ng Tao At Kapaligiran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/pagkukuro.html">Pagkukuro</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/becoming-a-member-of-society.html">Becoming A Member Of Society</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/finance-logo-quiz.html">Finance Logo Quiz</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/ceu-hymn-lyrics.html">Ceu Hymn Lyrics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/bugtong-tungkol-sa-jacket.html">Bugtong Tungkol Sa Jacket</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/pagiging-tapat-sa-kapwa.html">Pagiging Tapat Sa Kapwa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/filipino-module.html">Filipino Module</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/indirect-commands-english.html">Indirect Commands English</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://toptenstudi.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://toptenstudi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

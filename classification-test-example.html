@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classification Test Example - QnA</title>
+    <meta name="description" content="Classification Test Example, , , , , , , 0, Chapter 18 Classification Test, studylib.net, 768 x 994, png, , 20, classification-test-example, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Classification Test Example - QnA" />
+    <meta property="og:description" content="Classification Test Example, , , , , , , 0, Chapter 18 Classification Test, studylib.net, 768 x 994, png, , 20, classification-test-example, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Classification Test Example - QnA" />
+    <meta name="twitter:description" content="Classification Test Example, , , , , , , 0, Chapter 18 Classification Test, studylib.net, 768 x 994, png, , 20, classification-test-example, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://toptenstudi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://toptenstudi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://toptenstudi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://toptenstudi.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://toptenstudi.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Classification Test Example</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">ramil0494</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Classification+Test+Example" alt="Classification Test Example">
+                    </div>
+                    <p></p>
+                    <p>ACTIVITY 6
+example for each classification of appetizer. Write your answer on your test notebook
+Direction: Give an example for each classification of appetizer</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-6example-for-each-classification-of-appetizer-write-your-answer-on-your-test-notebookdirection-give-an-example-for-each-classification-of-appetizer">1.
+                                            ACTIVITY 6
+example for each classification of appetizer. Write your answer on your test notebook
+Direction: Give an example for each classification of appetizer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-10-power-on-self-test-directions-for-numbers-1-5-identify-the-word-that-corresponds-to-each-item-1-examples-of-this-classification-of-speech-act-is-firing-baptizing-passing-a-sentence">2.
+                                            ACTIVITY 10. POWER ON SELF-TEST Directions: For numbers 1-5. Identify the word that corresponds to each item. 1. Examples of this classification of speech act is firing, baptizing, passing a sentence and excommunicating. 2. Examples of this classification of speech act is ordering, requesting. advising, asking and inviting. 3. Examples of this classification of speech act is planning, vowing and promising 4. Examples of this classification of speech act is suggesting, putting forward, boasting and concluding. 5. Examples of this classification of speech act is apologizing, thanking, welcoming and deploring. &amp; These are statements that do not intend to achieve an action. 7. These are statements that intend to achieve an action. 8. He is the one who conceptualized the different classifications of speech act. 9. It is the utterance that a speaker makes to achieve an intended effect. 10. This is a type of speech act that is defined as the social function or intention of the utterance.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-for-numbers-1-5-identity-the-word-that-corresponds-to-each-tem-activity-10-power-on-self-test-1-examples-of-this-classification-of-speech-act-is-finng-baptizing-passing-a-sentence-and">3.
+                                            Directions For numbers 1-5, Identity the word that corresponds to each tem ACTIVITY 10. POWER ON SELF-TEST 1. Examples of this classification of speech act is finng, baptizing. passing a sentence and excommunicating. 2. Examples of this classification of speech act is ordering, requesting advising, asking and inviting. 3. Examples of this classification of speech act is planning, vowing and promising 4. Examples of this classification of speech act is suggesting, putting forward, boasting and concluding. 5. Examples of this classification of speech act is apologizing, thanking, welcoming and deploring. 6. These are statements that do not intend to achieve an action. 7. These are statements that intend to achieve an action. 8. He is the one who conceptualized the different classifications of speech act. 9. It is the utterance that a speaker makes to achieve an intended effect. 10. This is a type of speech act that is defined as the social function or intention of the utterance.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-can-achieve-directions-matching-type-match-column-a-with-column-b-write-the-letter-of-your-answers-on-the-numbers-below-column-a-1-response-2-survey-3-online-4-pilot-test-5-tabulate-co">4.
+                                            What I Can Achieve Directions: Matching Type. Match Column A with Column B. Write the letter of your answers on the numbers below. Column A 1. response 2. survey 3. online 4. pilot test 5. tabulate Column B a. giving the survey form to a group of respondents before it is posted online to improve the content of the survey formB. answer or reply C. connected to the Internet D. an examination of a topic/issue/event E. to arrange data according to a classification. For example, all YES answers are put together, and all NO answers are put together in a table ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-test-directions-read-the-questions-carefully-write-the-letter-of-the-correct-answer-on-the-blank-provided-before-the-number-1-which-of-the-following-is-not-an-example-of-mixture-a-coffee-c-s">5.
+                                            Pre-Test Directions: Read the questions carefully. Write the letter of the correct answer on the blank provided before the number. 1. Which of the following is NOT an example of mixture? A coffee C. sugar B. juice D. salad 2. What are the two classifications of matter based on its comfosition? A. alloy and mixture B. pure substance and mixture C. pure substance and solution D. homogeneous and heterogeneous 3. What will be produced when two substances are combined physically? A. Nothing is formed. B. A mixture is forned. C. A compound is formed. D. A pure substance is formed. 4. To what classification of matter does pure water belong? A. An clement B. A putra substance C. A homogeneous mixture D. A beterogeneous mixture 5. A woman accidentally spilled a real liquid on a piece of cloth. The liquid spreads out quickly but eventually evaporate. She noticed that a ring of red color is left behind. The following choices are true about the narure of the red liquid EXCEPT? A. The liquid is a mixture. B. The liquid is a pure substance because it evaporated C. The liquid is composed of two materials. D. The liquid is separated thru mechanical means.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-know-pre-test-direction-read-the-questions-carefully-choose-the-letter-of-the-correct-answer-and-write-it-on-the-space-provided-before-the-number-1-the-best-statement-that-describes-an-appet">6.
+                                            what I Know PRE TEST Direction: Read the questions carefully. Choose the letter of the correct answer and write it on the space provided before the number 1. The best statement that describes an appetizer is? A Appetizers are attractive in appearance, with good aroma and contains appealing flavor, B. Appetizers are foods which stimulate the appetite. C. Appetizer is a small pieces or portions of highly seasoned food, usually served before a meal. D. All of the Above 2. The following are examples of classification of appetizer except: A Buffet C. Hors D'Oeuvres D. Reliches 3. Which of the following ingredients are needed in decorating canaperd? Canape A. Baking soda, Essential oil, Lemon juice and White sugar B. Cheese, Salami, Steak and Strawberry syrup C Lettuce, Shrimp, Smoked oysters and Smoked Salmon D. Olives, Pickled onions, Radish slices and Tomatoes 4. These are kinds of appetizers that are made up of seafood or fruit with sauce and ucually served chilled. A. Canapes C. Hors D'Oeuvres B Cocktails D. Relishes 5. It refers to a thin slices of bread in different shapes which usually served toasted or sautéed. A. Conape C. Hors D'Oeuvres Cocktails D. Relishes B. Answer:1.D2.A3.D4.B5.A​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#week-2-discrete-continuous-random-variables1-task-1-pretestclassify-each-random-variable-as-discrete-or-continuous-random-variable1-number-of-female-teachers-in-your-school2-the-amount-of">7.
+                                            WEEK 2: DISCRETE &amp; CONTINUOUS RANDOM VARIABLES1. TASK 1: PRETESTClassify each random variable as discrete or continuous random variable:1. number of female teachers in your school2. the amount of gasoline consumed by a grab driver3. time needed to finish taking a bath4. number of UPCAT passers this year in Pasig5. number of laptops given to Pasig City teachers for this school year.II. TASK 2: POST TESTInto the tahle hy giving your own example according to the required classification​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-consists-of-one-or-more-paragraphs-that-attempt-to-explain-a-complex-term-a-single-definition-c-simplified-definitionb-double-definition-d-extended-definition2-it-explains-the-origin-of-the">8.
+                                            1. It consists of one or more paragraphs that attempt to explain a complex term.A. single definition C. simplified definitionB. double definition D. extended definition2. It explains the origin of the word itself.A. etymology C. cause-and-effectB. history D. description3. It discusses how the situation came about and what outcome it may have.A. etymology C. cause-and-effectB. history D. description4. It discusses how topic in question functions, including any special materials or conditionsrequired.A. principles of operation C. contrast/negationB. classification D. comparison5. It shows how the topic fits into a larger category.A. principles of operation C. contrast/negationB. classification D. comparison6. It shows how the topic differs from others in the same class.A. principles of operation C. contrast/negationB. classification D. comparison7. It shows how the topic is like others in the class.A. principles of operation C. contrast/negationB. classification D. comparison8. It explains by comparing two dissimilar topics, where the second is familiar to the audience.A. principles of operation C. examplesB. analogy D. illustrationsDAY 1Pre-Test9. It refers to short, phrase-length definitions.A. single C. simplifiedB. double D. extended10. It gives readers something familiar to associate the term with.A. simplified definition C. informal sentence definitionB. formal sentence definition D. extended definition11. It is the key to writing a good extended definition.A. simplify the definition C. choose the sources of definitionB. extend the definition D. give the literal meaning of the word12. It is a way of unlocking meaning of difficult words by defining other terms.A. single definition C. simplified definitionB. double definition D. extended definition13. It contains additional potentially unfamiliar terms.A. simplified definition C. informal sentence definitionB. formal sentence definition D. extended definition14. It is a way of unlocking meaning of difficult words through additional definitions.A. single definition C. simplified definitionB. double definition D. extended definition15. It is a sentence, clause, or phrase in length.A. single definition C. simplified definitionB. short definition D. extended definitionPag Improper Answer Report agad​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#physical-fitness-test-learning-task-2-these-activity-will-allow-you-to-better-understand-the-im-portance-of-exercise-in-building-total-fitness-and-family-wellness-body-composition-is-the-bodys-r">9.
+                                            Physical Fitness Test Learning Task 2: These activity will allow you to better understand the im- portance of exercise in building total fitness and family wellness. BODY COMPOSITION - is the body's relative amount of fat to fat-free mass. Body Mass Index (BMI) WEIGHT in Kilograms 20.83 (NORMAL) HEIGHT in Meters)2 Example: 30 30 (1.2012 1.44 CLASSIFICATION: Underweight BELOW 18.5 Normal 18.5 - 24.9 Overweight 25 - 29.9 Obese 30.0 - ABOVE A.1 Weight - the heaviness or lightness of a person.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cellphone-number-direction-a-now-that-you-know-what-are-the-health-related-components-and-their-different-assessment-exercises-it-is-now-your-turn-to-evaluate-yourselves-basing-on-these-assessment">10.
+                                            Cellphone number: DIRECTION: A. Now that you know what are the health-related components and their different assessment exercises, it is now your turn to evaluate yourselves basing on these assessments You can see these health related components on pages 7-9 in your module. Strength Flexibility Endurance AGE Partial 90 Sit and Zipper 3 Min. Step Test Curl-ups Degree Reach Test Push-up (inches) Day 1 Day 2 Day 3 Note: For Strength exercises write the quantity, for Flexibility write the length and for Endurance, write in the table whether accomplished or not. B. Body Mass Index (BMI) Equipment: Weighing Scale, Even Floor and Flat Wall and Tape Measure/ Meter Stick Take note, this is the formula for getting your BMI: BMI = Weight (kilos) Height (meters)2 Example: 30kg = 30 = 20.83 (normal) (1.2)2 1.44 Classification: Below 18.5 18.6 - 24.9 25 - 29.9 30.0 - Above ----- Underweight Normal --- Overweight Obese Direction: Compute your BMI here. You can go to the nearest health center to get your weight and height. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-your-answers-on-the-test-paper-1-what-informational-text-gives-us-information-about-how-we-classify-something-orsomeonea-explanation-textc-classification-textb-descriptive-textd-problem-an">11.
+                                            Write your answers on the test paper.1. What informational text gives us information about how we classify something orsomeone?A. explanation textC. Classification textB. descriptive textD. problem and solution text2. An informational text that explains how or why something happens.A. explanation textC. Classification textB. descriptive textD. problem and solution text3. What is the purpose of the writer in writing an explanation text?A. to give information on how to sort somethingB. to categorize something into a certain groupC. to explain a process or provides instructionD. to give solution4. The purpose of the writer is to give information on how to sort and categorize something orsomeone into a certain group or system based on certain characteristics. Whatinformational text is it?A. explanation textC. classification textB. descriptive textD. problem and solution text5. What kind of explanation text details the stages in an event?A. CausalC. consequentialB. sequentialD. none of these6. What explanation text details the causes of change from one stage to the next?A. CausalC. consequentialB. sequentialD. none of these7. An explanation text that explains effects and outcomes of processes.A. CausalC. consequentialB. sequentialD. none of these8. The Life Cycle of A Frog is an example ofexplanation text.A. CausalC. consequentialB. sequentialD. none of these9. How Digestion Occurs is an example ofexplanation text.A. CausalC. consequentialB. sequentialD. none of these10. An explanation text details and logically describes the stages in a process and provideinstruction and it is based on facts used to explain the sequence, cause and effect of anevent. This statement isA TrueB. FalseC. OpinionD. None of these​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-test-directions-read-the-questions-carefully-write-the-letter-of-the-correct-answer-on-the-blank-provided-before-the-number-1-which-of-the-following-is-not-an-example-of-mixture-a-coffee-c-s">12.
+                                            Pre-Test Directions: Read the questions carefully. Write the letter of the correct answer on the blank provided before the number. 1. Which of the following is NOT an example of mixture? A coffee C. sugar B. juice D. salad 2. What are the two classifications of matter based on its composition? A. alloy and mixture B. pure substance and mixture C. pure substance and solution D. homogeneous and heterogeneous 3. What will be produced when two substances are combined physically? A. Nothing is formed. B. A mixture is formed. C. A compound is formed. D. A pure substance is formed. 4. To what classification of matter does pure water belong? A. An element B. A pure substance C. A homogeneous mixture D. A heterogeneous mixture 5. A woman accidentally spilled a red liquid on a piece of cloth. The liquid spreads out quickly but eventually evaporate. She noticed that a ring of red color is left behind The following choices are true about the nature of the red liquid EXCEPT? A. The liquid is a mixture. B. The liquid is a pure substance because it evaporated. C. The liquid is composed of two materials. D. The liquid is separated thru mechanical means.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-consists-of-one-or-more-paragraphs-that-attempt-to-explain-a-complex-term-a-single-definition-c-simplified-definitionb-double-definition-d-extended-definition2-it-explains-the-origin-of">13.
+                                            1. It consists of one or more paragraphs that attempt to explain a complex term.
+A. single definition C. simplified definition
+B. double definition D. extended definition
+2. It explains the origin of the word itself.
+A. etymology C. cause-and-effect
+B. history D. description
+3. It discusses how the situation came about and what outcome it may have.
+A. etymology C. cause-and-effect
+B. history D. description
+4. It discusses how topic in question functions, including any special materials or conditions
+required.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+5. It shows how the topic fits into a larger category.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+6. It shows how the topic differs from others in the same class.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+7. It shows how the topic is like others in the class.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+8. It explains by comparing two dissimilar topics, where the second is familiar to the audience.
+A. principles of operation C. examples
+B. analogy D. illustrations
+DAY 1
+Pre-Test
+9. It refers to short, phrase-length definitions.
+A. single C. simplified
+B. double D. extended
+10. It gives readers something familiar to associate the term with.
+A. simplified definition C. informal sentence definition
+B. formal sentence definition D. extended definition
+11. It is the key to writing a good extended definition.
+A. simplify the definition C. choose the sources of definition
+B. extend the definition D. give the literal meaning of the word
+12. It is a way of unlocking meaning of difficult words by defining other terms.
+A. single definition C. simplified definition
+B. double definition D. extended definition
+13. It contains additional potentially unfamiliar terms.
+A. simplified definition C. informal sentence definition
+B. formal sentence definition D. extended definition
+14. It is a way of unlocking meaning of difficult words through additional definitions.
+A. single definition C. simplified definition
+B. double definition D. extended definition
+15. It is a sentence, clause, or phrase in length.
+A. single definition C. simplified definition
+B. short definition D. extended definition
+Pag Improper Answer Report agad</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-testdirections-read-the-questions-carefully-choose-the-letter-ofthe-correct-answer-and-write-it-on-the-space-provided-before-thenumber-1-the-best-statement-that-describes-an-appetizer-isa-app">14.
+                                            PRE-TESTDirections: Read the questions carefully. Choose the letter ofthe correct answer and write it on the space provided before thenumber.1. The best statement that describes an appetizer is?A. Appetizers are attractive in appearance, with good aroma andcontains appealing flavor.B. Appetizers are foods which stimulate the appetite.c. Appetizer is a small pieces or portions of highly seasoned food,usually served before a meal.D. All of the Above2. The following are examples of classification of appetizer except:A. BuffetC. Hors D'OeuvresB. CanapeD. Relishes3. Which of the following ingredients are needed in decoratingcanapes?A. Baking soda, Essential oil, Lemon juice and White sugarB. Cheese, Salami, Steak and Strawberry syrupC. Lettuce, Shrimp, Smoked oysters and Smoked SalmonD. Olives, Pickled onions, Radish slices and Tomatoes4. These are kinds of appetizers that are made up of seafood or fruitwith sauce and usually served chilled.A. CanapesC. Hors D'OeuvresB. CocktailsD. Relishes5. It refers to a thin slices of bread in different shapes which usuallyserved toasted or sautéed.CanapeC. Hors D'OeuvresB. CocktailsD. RelishesA.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#true-or-false-11-the-three-planes-of-motion-are-frontal-sagittal-and-transverse-planes-12-most-of-angular-movements-of-humans-occurs-in-frontal-sagittal-and-horizontal-planes-13-bringing-my-a">15.
+                                            TRUE OR FALSE 11. The three planes of motion are Frontal, Sagittal, and Transverse Planes. 12. Most of angular movements of humans occurs in Frontal, Sagittal, and Horizontal Planes. 13. Bringing my arms straight forward is a FRONTAL MOVEMENT 14. The planes of movement of my head turned and looking straight to my right side is FRONTAL MOVEMENT. 15. Raising my leg straight forward happens in Sagittal Plane. 16. There are two main types of Muscle Contractions namely Isotonic and Plyometrics 17. The two classification of ISOTONIC contractions are concentrate and Eccentric. 18. Eccentric muscle contraction lengthens to engage. 19. When engaging a muscle, Concentric lengthens the muscle. 20. Isometric muscle contraction does not move a muscle when engaged. 21. Bending my head forward is an example of EXTENSION. 22. Shrugging my shoulders up is CIRCUMDUCTION. 23. Raising my arms to the sides level to my shoulder is Abduction. 24. Closing my hands to a fist form ADDUCTION. 25. When one walks as a PRONATOR, the inner part of one's foot would land first. 26. A SUPINATOR has a longer distance between the knees than a PRONATOR. 27. From a neutral position, my HANDS are facing FRONT. 28. From a neutral position, moving my foot to point to my side is ROTATION. 29. Flexing my head forward is SAGITTAL. 30. Transverse and Horizontal motions involve TWISTING movements. 31. Dynamic stretching is best for warm up. 32. Static stretching relaxes the muscles better than dynamic stretching. 33. Dynamic Stretching is better for warm up, because it mimics more of the actual sporting movements. 34. Push ups is a good test for LOWER BODY muscular performance. 35. Deep Squat exercise is good way to test the UPPER BODY muscular rformand​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#and-healthful-benefits-like-salad-two-or-more-kinds-of-matter-these-are-called-mixtur-what-i-need-to-know-at-the-end-of-this-module-you-are-expected-to-1-classify-homogeneous-and-heterogeneous-mi">16.
+                                            and healthful benefits. Like salad two or more kinds of matter. These are called mixtur What I Need to Know At the end of this Module, you are expected to: 1. classify homogeneous and heterogeneous mixtures; S6MT-la-c-1 2. compare Homogeneous and Heterogeneous Mixture; and 3. value the benefits of homogeneous and heterogeneous mixtures at home; What I Know Pre-Test. Multiple Choice: Answer the following questions. Write your answers in your answer sheet. 1. Which of the following is an example of Heterogeneous mixture? A. water B. rainwater C. soft drinks D. sand with water 2. Which of the following is an example of Homogeneous mixture? A. oil with water B. vinegar with oil C. sand with pebbles D. flour with baking powder 3. A compost pile in the backyard for the garden, shows what mixture? A. Heterogeneous B. Homogeneous C. Both A&amp;B D. All answers are incorrect 4. An iced tea juice is an example of what mixturo? A. Homogeneous B. Heterogeneous C. Both A&amp;B D. all answers are incorrect 5. What classification of Mixture does blood belong? A. Heterogeneous B. Homogeneous C. Non-Homogeneous D. both A&amp;B 6. Metal such as Alloys belong to what classification of mixture? 4. Non-Homogeneous B. Heterogeneous C. Homogeneous D. Both A&amp;B 7. Soil is everywhere. What classification of Mixture does soil belong? A. Heterogeneous B. Homogeneous C. Non-heterogeneous D. No answers are correct 8. A Pinakbet dish is composed of different variety of vegetables. What kind of mixture is it? A. Non-heterogeneous B. Homogeneous C. Heterogeneous D. All answers are correct 9. In what type of mixture are the substances evenly distributed throughout the mixture? A. Homogeneous B. Heterogeneous C. all types of mixture D. no types of mixtures 10. Which of the following is an example of homogeneous mixture? A. Salt water B. coffee with water C. blood D. All answers are correct 12​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#narration-assessment-activity-vii-post-test-read-the-following-statements-carefully-and-identify-what-is-being-described-in-each-number-you-may-choose-your-answer-from-the-pool-of-words-below-hyper">17.
+                                            Narration Assessment Activity VII POST TEST. Read the following statements carefully and identify what is being described in each number. You may choose your answer from the pool of words below. Hypertext Description Intertext Claim of Value 1 Context Claim of Fact Paragraph Claim of Policy Mechanics Coherence Classification Comparison &amp; Contrast Cohesion Organization 1. A family that prays together stays together" is an example of what claim? 2. "Musical comedy is the best form of entertainment" is an example of what claim? 3. It asserts that specific policies should be instituted as solutions to problems. 4. Success of teaching depends upon the creativity of the teacher, is an example of what claim? 5. "Gender equality needs to be strengthened in the academe" is an example of what claim? 6. This creates a network of materials linked because of various connections. 7. It is the complex interrelationship between a text and other texts. 8. This refers to the occasion or situation that informs the reader about why a document was written and how it was written. 9. This is the modeling of a text's meaning by another text. 10. It is a non-linear way of presenting information. 11. It is a method of writing a paragraph by drawing pictures with words. 12. This method of paragraph development involves similarities and differences between two things. 13. This gives a written account of an event or story. 14. This is a collection of related sentences with one central idea. 15. This pattern of development classifies or divides people, places, things or ideas into categories. 16. This is achieved when ideas are logically and accurately arranged. 17. This refers to when the details of a paragraph are arranged according to the order in which they happened. 18. It is a set of conventions on how to spell, abbreviate, punctuate and capitalize. 19. This means that the sentences are arranged in a logical manner, making them easily understood by the reader. Page 18 of 18 20. To attain this property, one must be consistent with the use of pronouns.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-physical-fitness-test-adapted-from-deped-order-no-034-s-2019-part-1-health-related-fitness-components-body-composition-is-the-relative-percentage-of-the-body-fat-to-the-fat-free-mass-body-mas">18.
+                                            A. PHYSICAL FITNESS TEST Adapted from DepEd Order No.034 s. 2019 Part 1: Health - Related Fitness Components: Body composition is the relative percentage of the body fat to the fat-free mass. Body Mass Index Formula for computing Body Mass Index Weight in Kilograms Height in Meter2 Example: Classification Below 18.5 Underweight 18.5-24.9 Normal 25.0-29.9 Overweight 30.0-above Obese​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-3-this-activity-will-allow-you-to-better-understand-the-importance-of-exercise-in-building-total-fitness-and-family-wellness-situdy-the-following-ideas-you-may-do-this-by-looking-for">19.
+                                            Learning Task 3: This activity will allow you to better understand the importance of exercise in building total fitness and family wellness. Situdy the following ideas. You may do this by looking for a partner to complete the task BODY COMPOSITION - is the body's relative amount of fat to fat-free mass. Body Mass Index (BMI) WEIGHT in Kilograms] HEIGHT in Meters Example: 30 (1.20P CLASSIFICATION: BELOW 18.5 18.5 - 24.9 25 - 29.9 30.0 ABOVE Underweight Normal Overweight 20.83 (NORMAL) Obese A.1 Weight - the heaviness or lightness of a person. Equipment: Weighing Scale Procedure: For the test taker: a. Wear light clothing. b. On bare feet, stand erect and still with weight evenly distribut ed on the center of the scale.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-testmaxeene-went-to-the-woods-she-saw-animals-with-four-pairs-of-legs-and-2-body-segments-what-animals-did-she-see-a-firefliesb-mitesc-centipedesd-spidersflukes-tapeworms-and-ascaris-are-w">20.
+                                            PRE TESTMaxeene went to the woods. She saw animals with four pairs of legs and 2 body segments. What animals did she see? A. firefliesB. mitesC. centipedesD. spidersFlukes, tapeworms and ascaris are worms. Which are examples of Platyhelminthes? A. flukes and tapewormsB. tapeworms and ascarisC. flukes, tapeworms and ascarisD. flukes and ascarisWhat characteristics do sea stars, sea urchins, and brittle stars have in common? A. tube-like in shapeB. sessileC. spiny-skinnedD. smooth-skinnedWorms are invertebrates with soft, slender body. What are the classifications of worms? I. annelids III. arachnids V. platyhelminthes II. arthropods IV. nematodes VI. poriferans A. I, IV, VB. I, III, IVC. I, II, IIID. I, III, VIThe following statement is true EXCEPT A. All invertebrates reproduce asexually.B. All invertebrates do not have backbones.C. Some invertebrates are sessile.D. Some invertebrates undergo life cycle.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#post-testchoose-the-letter-of-the-best-answer-write-the-chosen-letter-on-a-separate-sheet-of-paper-1-a-dance-developed-by-people-that-reflect-the-life-of-the-people-of-a-certain-country-orregiona-c">21.
+                                            POST TESTChoose the letter of the best answer. Write the chosen letter on a separate sheet of paper.1. A dance developed by people that reflect the life of the people of a certain country orregionA. Contemporary DanceC. Ethnic/Folk danceB. Street DanceD. Social dance2. A classification of dance that is suitable for special occasions.A. Festival DanceC. Wedding danceB. Courtship DanceD. Occupational dance3. Lapay Bantigue was originated in the island ofA. PanayC. PalawanB. MasbateD. Negros4. Lapay Bantigue is an example of what classification of dance.A. OccupationalC. ReligiousB. FestivalD. Comic5. What movement is being demonstrated by this; “Raise your right arm and do a horizontal thumbs up. Rotate your hand and wrist four counts clockwise, and another four countscounter-clockwise”A. KumintangC. SalokB. Hayon – hayonD. Wasiwas6. The Philippine national costume for women is.A. Maria ClaraC. KimonoB. Baro at SayaD. Binukot7. Planting, punding and fishing are examples of what classification of dance.A. Wedding DanceC. Courtship DanceB. Festival DanceD. Occupational dance8. Which of the following is not an example of Philippine folk dance.A. Itik-ItikC. ScottishB. MaglalatikD. Pantomina9. Which of the following dance steps used in the dance Lapay Bantigue.A. KumintangC. HabaneraB. MincingD. Polka10. The Philippine national costume for men is.A. IfugaoC. KalingaB. Barong TagalogD. Bahag
+​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-another-two-examples-of-tool-in-each-classification-and-give-its-uses-you-can-go-to-internetshop-for-further-references-a-measuring-tool1-2-b-marking-lining-tool1-2-c-testing-tool1-2-d-edge">22.
+                                            Give another two examples of tool in each classification and give its uses. You can go to internetshop for further references.A. MEASURING TOOL1.2.B. MARKING LINING TOOL1.2.C. TESTING TOOL1.2.D. EDGE-CUTTING TOOL1.2.E. TOOTH-CUTTING TOOL1.2.F. BORING TOOL1.2.G. HOLDING TOOL1.2.H. MISCELLENEOUS TOOL1.2.I. DRIVING TOOL1.2.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#please-answer-this-correct-write-true-if-the-statement-is-true-and-false-if-it-is-false-____1-body-composition-is-used-to-describe-the-percentage-of-fat-bone-water-and-muscle-in-human-bodies">23.
+                                            PLEASE ANSWER THIS CORRECT :(
+Write TRUE if the statement is true and FALSE if it is false.
+____1. Body Composition is used to describe the percentage of fat, bone, water, and muscle in human bodies.
+____2. Fitness is a condition in which an individual has enough energy to avoid fatigue and enjoy life.
+____3. Flexibility is the ability to move a body part through a full range of motion at a joint.
+____4. Balance is a component under Health-Related Fitness.
+____5. Skill-Related Fitness is the ability to become and stay physically healthy.
+____6. Swimming is an example of cardiovascular exercise.
+____7. To be physically fit, goals help us to attain our target.
+____8. Body Mass Index (BMI)- this test determines your body’s classification.
+____9. Physical Fitness is a state of health and well-being that enables the individual to perform well in the aspects of sports, occupations, and daily activities.
+____10. Agility refers to the ability of the muscle or group of muscles to sustain repeated contractions against a resistance for an extended period of time.
+____11. Setting a goal is as easy as sleeping.
+____12. Results are positive if we plan carefully.
+____13. Balance is a component under Health-Related Fitness.
+____14. Motivation is not important in attaining goals
+____15.Setting goals are not important in attaining physical fitness</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-1directionsinstructions-identify-and-classify-the-following-carpentry-tools-exampleit-is-a-bubble-reading-level-which-answer-level-bar-testing-toolindicates-the-levelness-of-thesur">24.
+                                            Learning Task 1Directions/Instructions: Identify and classify the following carpentry tools.Example:It is a bubble reading level which Answer: Level bar - Testing toolindicates the levelness of thesurface being tested.Name ofCarpentry ToolClassification1. It is a retractable tape measure.2. It is a heavy pointed tipsuspended by a string which isused as a vertical reference line.3. It is a tool used forcarving woods and cleaning jointsand saw cuts.4. It is a tool used forcutting woodsmanually.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ii-instruction-true-or-false-write-t-if-the-statement-is-true-and-fif-the-statement-is-false-write-your-answer-on-the-spaceprovided-before-the-number-1-recreational-activities-are-done-during-you">25.
+                                            II. Instruction: True or False: Write T if the statement is true and Fif the statement is false. Write your answer on the spaceprovided before the number.1. Recreational activities are done during your free time.2. Sit and Reach is an example test for Flexibility.3. Ricalito's height is 1.85m and weighs 75kg, his BMIclassification is Normal?4. Monitoring your progress in health is your parent'sobligation5. Promoting a societal fitness.6. If the goal is weight gain, a person should focus onweigh expenditures.7. BMI depends on person's body composition,8. Stork balance, Standing long jump and hexagonagility test are test for skill related fitness.9. Since we are in a pandemic, all recreational activitiesoutside and at home should stop.10. Doing household chores is healthy.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-testdirections-read-the-questions-carefully-and-choose-the-letterof-the-your-answer-c-five1-what-are-the-animals-with-backbonesa-predatorsc-reptilesb-vertebratesd-invertebrates2-how-many">26.
+                                            Pre-testDirections: Read the questions carefully and choose the letterof the your answer.c. five1. What are the animals with backbones?a. predatorsc. reptilesb. vertebratesd. invertebrates2. How many groups do vertebrates havea. sixb. fourd. seven3. How do birds reproducea. by giving birthc. by making a nestb. by laying eggsd. by live their young4. Which of these classification of vertebrates do not lay eggs?a. fishc. mammalsb. reptilesd. amphibian5. How do mammals feed their young?a. by using their gillsc. by using their tailb. by using their mammary glandd. by using their beak6. What do fishes used in breathinga. finsc. tailb. scalesd. gills7. Why reptiles different from amphibians? Because they havea. feathersc. mouthsb. hard skin/shelld. moist body8. Which can live both on land and in watera. fishesc. birdsb. amphibiansd. mammals9. Humans belong toa. birdsc. mammalsb. reptilesd. amphibians10. A parrot is an example ofa. birdC. fishb, mammald. amphibian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#physical-education-directions-read-and-analyze-each-item-carefully-write-the-letter-of-the-correct-answer-in-your-answer-sheet-d-curl-up-1-which-of-the-following-best-improves-agility-a-body-mass">27.
+                                            PHYSICAL EDUCATION: Directions: Read and analyze each item carefully write the letter of the correct answer in your answer sheet D. Curl up 1. Which of the following best improves agility? A Body Mass Index B. 1km Run/ Walk Test C. 40m sprint D Hexagonal 2. It measures the strength of the abdominal muscles. A Sit and reach B. Standing long jump C Push up 3. It consists of agility, balance, speed, reaction time and power A Physical fitness B. Health-related fitness C. Skill-related fitness D. Diet 4. What is the fitness parameter being measured in Zipper test? A Agility B Balance C. Coordination D. Flexibility 5. It is a type of stretching that prepares the muscles for active contraction. A Dynamic stretching B Warm-up stretching C Static stretching D. Flexibility stretching 6. The following are example of static stretching, EXCEPT ONE, what is it? A March and reach B. Upper back stretch C. Calf stretch D. Knee stretch 7. The following are example of dynamic stretching, EXCEPT ONE, what is it? A Front swing B. Plank walk outs C. Lunge torso twist D. Chest stretch 8. It is done by doing gradual stretching activities from upper to lower extremities A Strength exercise B. Warm-up exercise C. Flexibility exercise D. Endurance exercise 9. It is the ability to perform movement or cover a distance for a short period of time A Muscular strength B. Reaction time C. Flexibility D. Speed 10. What would happen if you will not address your poor physical fitness test result? A There is a range of muscle joints that may develop C. There will be fast heart rate per minute B. There is an increase of muscle fatigue D. There is a risk of having cardiovascular diseases 11. It consists of cardio vascular endurance, muscular strength and endurance flexibility and body composition B. Health-related fitness A Physical fitness D. Diet C. Skill-related fitness 12. James waistline is 5 inches bigger than Gab with BMI classification of overweight while Gab's BMI classification is normal. What does this mean? A. The bigger the waistline, the more body fat amount C. The bigger the waistline, the more water content B. The smaller the waistline, the cheaper the clothes D. The smaller the waistline, the lesser blood supply 13.It is a type of stretching appropriate in cool down exercise as it help muscles to relax, realign muscles fibers and re-establish normal range of movement C. Static stretching D. Flexibility stretching A Dynamic stretching B. Warm-up stretching 14. Coordination is the ability to use the senses together with the body parts during movement. What is the best example of an activity thay would develop coordination? B. Dancing C. Hitting the tennis ball D. Paper juggling A. Sit and reach 15. It is the body's ability to function effectively and efficiently without undue fatigue in work, leisure activities to meet emergency situations and to resist diseases from sedentary lifestyle C. Physical Educa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ce-fuines-tesis-1-do-the-following-to-prepare-for-the-tests-review-the-procedures-in-conducting-the-pft-wear-the-appropriate-attire-do-the-warm-up-exercises-on-your-own-or-with-your-partner-re-or">28.
+                                            ce FUINES TESIS 1. Do the following to prepare for the tests. Review the procedures in conducting the PFT. Wear the appropriate attire. Do the warm-up exercises on your own or with your partner. Re-orient yourself on the proper execution of the tests and recording of test results. Go through the test without exerting maximum effort. Observe safety 2. Perform the tests with someone assist you. 3. Record your test results. HEALTH-RELATED FITNESS TESTS: A. BODY MASS INDEX (BMI) The following formula is used to get the BMI BMI = Weight (kg) Height (m)2 Example: BMI = 48 kg (1.50 m) 2 BMI= 21.33 - NORMAL Classification: Below 18.5 - Underweight 18.6 - 24.9 - Normal 25 – 29.9 - Overweight 3.0 - Above - Obese A.1 Weight - the heaviness or lightness of a person. Equipment: Weighing Scale Procedure: For the test taker:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#c-flexibility1-roy-is-15-years-old-he-wanted-to-exercise-his-lungs-by-doing-a-1-kilometer-run-evenwhat-is-the-best-time-he-need-to-achieve-his-goalb-418c-4142-sit-and-reach-exercise-is-an-exa">29.
+                                            c. Flexibility1. Roy is 15 years old. He wanted to exercise his lungs by doing a 1-kilometer run evenWhat is the best time he need to achieve his goal?b. 4:18C. 4:142. Sit and Reach exercise is an example of what component of Health-related fitness?a. Muscular Strengthb. Muscular Enduranced. Body Composition3. Refers to the heaviness or lightness of a person.a. Weightb. Waistlinec. Height d. Fat4. Therese is looking for a dress to wear on her friend's birthday. At the mall, sheaattendant to look for a dress with 40 inches waistline. What is the standard classificTherese's waist circumference?a. Highb. Very Highc. Lowd. Very Low5. This exercise aims to measure the strength of abdominal muscles.a. Push-upsb. Curl-upsc. Pull-upsd. Squats6. What is the standard score of Phillip's Zipper Test of 3.5 cm?b. 3d. 47. Flexibility is an important aspect of fitness. Which of the following statements below dterm FLEXIBILITY?a. a form of physical activity designed to improve healthb. the range of motion possible at a jointc. the ability to move from one position to another easilyd. a performer who can take on any different rolesa. 1C. 2ondurance activity​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#classifications-of-mixtures-1-homogenous-mixture-uniform-mixtures-have-one-notable-characteristics-having-single-appearance-or-phase-hence-the-term-homogenous-from-latin-word-homo-meaning-the">30.
+                                            CLASSIFICATIONS OF MIXTURES 1. Homogenous mixture (uniform mixtures) - have one notable characteristics- having single appearance or phase; hence the term homogenous from Latin word homo, meaning "the same". Examples: a. hard alcohol b. soy sauce C. wine d. vinegar e, coffee f. blood 2. Heterogeneous mixture (non – uniform mixtures) - in which its components have no fixed amount and can be easily recognized and separated from the mixture, Examples: a. salad b. mixed nuts c. Cereal in milk d. Vegetable soup *Activity Written Test 1. From the short information that you have read about mixtures, answer the following questions. Write the answer in a sheet of paper. 1. What is a mixture? 2. What are the 2 types of mixtures? and ​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="activity-6example-for-each-classification-of-appetizer-write-your-answer-on-your-test-notebookdirection-give-an-example-for-each-classification-of-appetizer">
+                            1. ACTIVITY 6
+example for each classification of appetizer. Write your answer on your test notebook
+Direction: Give an example for each classification of appetizer</h2><br />
+                        <p> </p>There are nine main classifications of appetizers: canapes, chips and dip, cocktails, finger foods, fruits and vegetables, hors d'oeuvres, petite...<p></p>EXAMPLE<p></p><p>What are examples of appetizers?</p><p></p><p>Appetizers</p><p>Bruschetta. Grilled country bread with Roma tomatoes, olive oil, garlic and basil. ... </p><p>Artichoke and Spinach Dip. Tuscan bread served with a delicious blend of spinach, artichoke, and cream. ... </p><p>Stuffed Mushrooms. ... </p><p>Fried Calamari. ... </p><p>Four Cheese Garlic Bread. ... </p><p>Shrimp Scampi. ... </p><p>French Fries.</p><br />
+                                            <h2 class="ez-toc-section" id="activity-10-power-on-self-test-directions-for-numbers-1-5-identify-the-word-that-corresponds-to-each-item-1-examples-of-this-classification-of-speech-act-is-firing-baptizing-passing-a-sentence">
+                            2. ACTIVITY 10. POWER ON SELF-TEST Directions: For numbers 1-5. Identify the word that corresponds to each item. 1. Examples of this classification of speech act is firing, baptizing, passing a sentence and excommunicating. 2. Examples of this classification of speech act is ordering, requesting. advising, asking and inviting. 3. Examples of this classification of speech act is planning, vowing and promising 4. Examples of this classification of speech act is suggesting, putting forward, boasting and concluding. 5. Examples of this classification of speech act is apologizing, thanking, welcoming and deploring. &amp; These are statements that do not intend to achieve an action. 7. These are statements that intend to achieve an action. 8. He is the one who conceptualized the different classifications of speech act. 9. It is the utterance that a speaker makes to achieve an intended effect. 10. This is a type of speech act that is defined as the social function or intention of the utterance.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Explanation:</strong></p><p>sorry po hindi ko po alam pasensya na po uli </p><br />
+                                            <h2 class="ez-toc-section" id="directions-for-numbers-1-5-identity-the-word-that-corresponds-to-each-tem-activity-10-power-on-self-test-1-examples-of-this-classification-of-speech-act-is-finng-baptizing-passing-a-sentence-and">
+                            3. Directions For numbers 1-5, Identity the word that corresponds to each tem ACTIVITY 10. POWER ON SELF-TEST 1. Examples of this classification of speech act is finng, baptizing. passing a sentence and excommunicating. 2. Examples of this classification of speech act is ordering, requesting advising, asking and inviting. 3. Examples of this classification of speech act is planning, vowing and promising 4. Examples of this classification of speech act is suggesting, putting forward, boasting and concluding. 5. Examples of this classification of speech act is apologizing, thanking, welcoming and deploring. 6. These are statements that do not intend to achieve an action. 7. These are statements that intend to achieve an action. 8. He is the one who conceptualized the different classifications of speech act. 9. It is the utterance that a speaker makes to achieve an intended effect. 10. This is a type of speech act that is defined as the social function or intention of the utterance.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Explanation:</strong></p><p>mahina po ako sa english sorry po talaga </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-i-can-achieve-directions-matching-type-match-column-a-with-column-b-write-the-letter-of-your-answers-on-the-numbers-below-column-a-1-response-2-survey-3-online-4-pilot-test-5-tabulate-co">
+                            4. What I Can Achieve Directions: Matching Type. Match Column A with Column B. Write the letter of your answers on the numbers below. Column A 1. response 2. survey 3. online 4. pilot test 5. tabulate Column B a. giving the survey form to a group of respondents before it is posted online to improve the content of the survey formB. answer or reply C. connected to the Internet D. an examination of a topic/issue/event E. to arrange data according to a classification. For example, all YES answers are put together, and all NO answers are put together in a table ​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1</strong><strong>.</strong><strong>B</strong></p><p><strong>2</strong><strong>.</strong><strong>D</strong></p><p><strong>3</strong><strong>.</strong><strong>C</strong></p><p><strong>4</strong><strong>.</strong><strong>A</strong></p><p><strong>5</strong><strong>.</strong><strong>E</strong></p><p><strong>Explanation:</strong></p><p>#sana makatulong^_^</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pre-test-directions-read-the-questions-carefully-write-the-letter-of-the-correct-answer-on-the-blank-provided-before-the-number-1-which-of-the-following-is-not-an-example-of-mixture-a-coffee-c-s">
+                            5. Pre-Test Directions: Read the questions carefully. Write the letter of the correct answer on the blank provided before the number. 1. Which of the following is NOT an example of mixture? A coffee C. sugar B. juice D. salad 2. What are the two classifications of matter based on its comfosition? A. alloy and mixture B. pure substance and mixture C. pure substance and solution D. homogeneous and heterogeneous 3. What will be produced when two substances are combined physically? A. Nothing is formed. B. A mixture is forned. C. A compound is formed. D. A pure substance is formed. 4. To what classification of matter does pure water belong? A. An clement B. A putra substance C. A homogeneous mixture D. A beterogeneous mixture 5. A woman accidentally spilled a real liquid on a piece of cloth. The liquid spreads out quickly but eventually evaporate. She noticed that a ring of red color is left behind. The following choices are true about the narure of the red liquid EXCEPT? A. The liquid is a mixture. B. The liquid is a pure substance because it evaporated C. The liquid is composed of two materials. D. The liquid is separated thru mechanical means.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. C  sugar</p><p>2. B. pure substance and mixture</p><p>3. B a mixture is formed </p><p>4. A. an element</p><p>5. d. The liquid is separated thru mechanical means.</p><p><strong>Step-by-step explanation:</strong></p><p></p><p>pa brainliest pls</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-i-know-pre-test-direction-read-the-questions-carefully-choose-the-letter-of-the-correct-answer-and-write-it-on-the-space-provided-before-the-number-1-the-best-statement-that-describes-an-appet">
+                            6. what I Know PRE TEST Direction: Read the questions carefully. Choose the letter of the correct answer and write it on the space provided before the number 1. The best statement that describes an appetizer is? A Appetizers are attractive in appearance, with good aroma and contains appealing flavor, B. Appetizers are foods which stimulate the appetite. C. Appetizer is a small pieces or portions of highly seasoned food, usually served before a meal. D. All of the Above 2. The following are examples of classification of appetizer except: A Buffet C. Hors D'Oeuvres D. Reliches 3. Which of the following ingredients are needed in decorating canaperd? Canape A. Baking soda, Essential oil, Lemon juice and White sugar B. Cheese, Salami, Steak and Strawberry syrup C Lettuce, Shrimp, Smoked oysters and Smoked Salmon D. Olives, Pickled onions, Radish slices and Tomatoes 4. These are kinds of appetizers that are made up of seafood or fruit with sauce and ucually served chilled. A. Canapes C. Hors D'Oeuvres B Cocktails D. Relishes 5. It refers to a thin slices of bread in different shapes which usually served toasted or sautéed. A. Conape C. Hors D'Oeuvres Cocktails D. Relishes B. Answer:1.D2.A3.D4.B5.A​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.D 2.A 3.D 4.B 5.A</p><p><strong>Explanation:</strong></p><p>sana makatulong</p><br />
+                                            <h2 class="ez-toc-section" id="week-2-discrete-continuous-random-variables1-task-1-pretestclassify-each-random-variable-as-discrete-or-continuous-random-variable1-number-of-female-teachers-in-your-school2-the-amount-of">
+                            7. WEEK 2: DISCRETE &amp; CONTINUOUS RANDOM VARIABLES1. TASK 1: PRETESTClassify each random variable as discrete or continuous random variable:1. number of female teachers in your school2. the amount of gasoline consumed by a grab driver3. time needed to finish taking a bath4. number of UPCAT passers this year in Pasig5. number of laptops given to Pasig City teachers for this school year.II. TASK 2: POST TESTInto the tahle hy giving your own example according to the required classification​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. discrete	</p><p>2. continuous	</p><p>3. continuous	</p><p>4. discrete</p><p>5. discrete</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-it-consists-of-one-or-more-paragraphs-that-attempt-to-explain-a-complex-term-a-single-definition-c-simplified-definitionb-double-definition-d-extended-definition2-it-explains-the-origin-of-the">
+                            8. 1. It consists of one or more paragraphs that attempt to explain a complex term.A. single definition C. simplified definitionB. double definition D. extended definition2. It explains the origin of the word itself.A. etymology C. cause-and-effectB. history D. description3. It discusses how the situation came about and what outcome it may have.A. etymology C. cause-and-effectB. history D. description4. It discusses how topic in question functions, including any special materials or conditionsrequired.A. principles of operation C. contrast/negationB. classification D. comparison5. It shows how the topic fits into a larger category.A. principles of operation C. contrast/negationB. classification D. comparison6. It shows how the topic differs from others in the same class.A. principles of operation C. contrast/negationB. classification D. comparison7. It shows how the topic is like others in the class.A. principles of operation C. contrast/negationB. classification D. comparison8. It explains by comparing two dissimilar topics, where the second is familiar to the audience.A. principles of operation C. examplesB. analogy D. illustrationsDAY 1Pre-Test9. It refers to short, phrase-length definitions.A. single C. simplifiedB. double D. extended10. It gives readers something familiar to associate the term with.A. simplified definition C. informal sentence definitionB. formal sentence definition D. extended definition11. It is the key to writing a good extended definition.A. simplify the definition C. choose the sources of definitionB. extend the definition D. give the literal meaning of the word12. It is a way of unlocking meaning of difficult words by defining other terms.A. single definition C. simplified definitionB. double definition D. extended definition13. It contains additional potentially unfamiliar terms.A. simplified definition C. informal sentence definitionB. formal sentence definition D. extended definition14. It is a way of unlocking meaning of difficult words through additional definitions.A. single definition C. simplified definitionB. double definition D. extended definition15. It is a sentence, clause, or phrase in length.A. single definition C. simplified definitionB. short definition D. extended definitionPag Improper Answer Report agad​</h2><br />
+                        <p>1.C</p><p>2.A</p><p>3.B</p><p>4.A</p><p>5.D</p><p>6.D</p><p>7.A</p><p>8.C</p><p>9.A</p><p>10.A</p><p>11.D</p><p>12.C</p><p>13.C</p><p>14.A</p><p>15.D</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="physical-fitness-test-learning-task-2-these-activity-will-allow-you-to-better-understand-the-im-portance-of-exercise-in-building-total-fitness-and-family-wellness-body-composition-is-the-bodys-r">
+                            9. Physical Fitness Test Learning Task 2: These activity will allow you to better understand the im- portance of exercise in building total fitness and family wellness. BODY COMPOSITION - is the body's relative amount of fat to fat-free mass. Body Mass Index (BMI) WEIGHT in Kilograms 20.83 (NORMAL) HEIGHT in Meters)2 Example: 30 30 (1.2012 1.44 CLASSIFICATION: Underweight BELOW 18.5 Normal 18.5 - 24.9 Overweight 25 - 29.9 Obese 30.0 - ABOVE A.1 Weight - the heaviness or lightness of a person.​</h2><br />
+                        <p><strong>answer:</strong></p><p>you need to do that fitness </p><p><strong>Explanation:</strong></p><p>there's no have a question</p><br />
+                                            <h2 class="ez-toc-section" id="cellphone-number-direction-a-now-that-you-know-what-are-the-health-related-components-and-their-different-assessment-exercises-it-is-now-your-turn-to-evaluate-yourselves-basing-on-these-assessment">
+                            10. Cellphone number: DIRECTION: A. Now that you know what are the health-related components and their different assessment exercises, it is now your turn to evaluate yourselves basing on these assessments You can see these health related components on pages 7-9 in your module. Strength Flexibility Endurance AGE Partial 90 Sit and Zipper 3 Min. Step Test Curl-ups Degree Reach Test Push-up (inches) Day 1 Day 2 Day 3 Note: For Strength exercises write the quantity, for Flexibility write the length and for Endurance, write in the table whether accomplished or not. B. Body Mass Index (BMI) Equipment: Weighing Scale, Even Floor and Flat Wall and Tape Measure/ Meter Stick Take note, this is the formula for getting your BMI: BMI = Weight (kilos) Height (meters)2 Example: 30kg = 30 = 20.83 (normal) (1.2)2 1.44 Classification: Below 18.5 18.6 - 24.9 25 - 29.9 30.0 - Above ----- Underweight Normal --- Overweight Obese Direction: Compute your BMI here. You can go to the nearest health center to get your weight and height. ​</h2><br />
+                        <p>nakalimutan q sagot balikan q nlng kpag naalala q </p><p></p><p><strong>Answer:</strong></p><p>pno po Yan diko po alm sagot ehh konin ko lng po Ang points</p><br />
+                                            <h2 class="ez-toc-section" id="write-your-answers-on-the-test-paper-1-what-informational-text-gives-us-information-about-how-we-classify-something-orsomeonea-explanation-textc-classification-textb-descriptive-textd-problem-an">
+                            11. Write your answers on the test paper.1. What informational text gives us information about how we classify something orsomeone?A. explanation textC. Classification textB. descriptive textD. problem and solution text2. An informational text that explains how or why something happens.A. explanation textC. Classification textB. descriptive textD. problem and solution text3. What is the purpose of the writer in writing an explanation text?A. to give information on how to sort somethingB. to categorize something into a certain groupC. to explain a process or provides instructionD. to give solution4. The purpose of the writer is to give information on how to sort and categorize something orsomeone into a certain group or system based on certain characteristics. Whatinformational text is it?A. explanation textC. classification textB. descriptive textD. problem and solution text5. What kind of explanation text details the stages in an event?A. CausalC. consequentialB. sequentialD. none of these6. What explanation text details the causes of change from one stage to the next?A. CausalC. consequentialB. sequentialD. none of these7. An explanation text that explains effects and outcomes of processes.A. CausalC. consequentialB. sequentialD. none of these8. The Life Cycle of A Frog is an example ofexplanation text.A. CausalC. consequentialB. sequentialD. none of these9. How Digestion Occurs is an example ofexplanation text.A. CausalC. consequentialB. sequentialD. none of these10. An explanation text details and logically describes the stages in a process and provideinstruction and it is based on facts used to explain the sequence, cause and effect of anevent. This statement isA TrueB. FalseC. OpinionD. None of these​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. C</p><p>2.D</p><p>3C</p><p>4B</p><p>5no answer</p><p>6no answer</p><p>7.no answer</p><p>8no answer</p><p>9no answer</p><p>10.A</p><p></p><p><strong>Explanation:</strong></p><p>sana makatulong po sorry lang po sa 5-9 </p><br />
+                                            <h2 class="ez-toc-section" id="pre-test-directions-read-the-questions-carefully-write-the-letter-of-the-correct-answer-on-the-blank-provided-before-the-number-1-which-of-the-following-is-not-an-example-of-mixture-a-coffee-c-s">
+                            12. Pre-Test Directions: Read the questions carefully. Write the letter of the correct answer on the blank provided before the number. 1. Which of the following is NOT an example of mixture? A coffee C. sugar B. juice D. salad 2. What are the two classifications of matter based on its composition? A. alloy and mixture B. pure substance and mixture C. pure substance and solution D. homogeneous and heterogeneous 3. What will be produced when two substances are combined physically? A. Nothing is formed. B. A mixture is formed. C. A compound is formed. D. A pure substance is formed. 4. To what classification of matter does pure water belong? A. An element B. A pure substance C. A homogeneous mixture D. A heterogeneous mixture 5. A woman accidentally spilled a red liquid on a piece of cloth. The liquid spreads out quickly but eventually evaporate. She noticed that a ring of red color is left behind The following choices are true about the nature of the red liquid EXCEPT? A. The liquid is a mixture. B. The liquid is a pure substance because it evaporated. C. The liquid is composed of two materials. D. The liquid is separated thru mechanical means.​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1</strong><strong>-</strong><strong>C</strong></p><p><strong>2</strong><strong>-</strong><strong>B</strong></p><p><strong>3</strong><strong>-</strong><strong>B</strong></p><p><strong>4</strong><strong>-</strong><strong>B</strong></p><p><strong>5</strong><strong>-</strong><strong>B</strong></p><p></p><p><strong>Explanation:</strong></p><p>1-Cause A,B,D are mixture </p><p>2-pure subtance and muxture are the two classifications</p><p>3-<strong>B</strong><strong> </strong>cause A mixture is created when two or more different substances are physically combined and can be separated back into its original substances. A chemical reaction occurs when two or more substances are combined to form a new substance and cannot be separated back into its original substances.</p><p>4-a pure water belong to pure subtance</p><p>5-B basta yan hirap i explain eh hahahaha....</p><p></p><p>base po yan sa na risearch ko and nabasa sa module.....:)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-it-consists-of-one-or-more-paragraphs-that-attempt-to-explain-a-complex-term-a-single-definition-c-simplified-definitionb-double-definition-d-extended-definition2-it-explains-the-origin-of">
+                            13. 1. It consists of one or more paragraphs that attempt to explain a complex term.
+A. single definition C. simplified definition
+B. double definition D. extended definition
+2. It explains the origin of the word itself.
+A. etymology C. cause-and-effect
+B. history D. description
+3. It discusses how the situation came about and what outcome it may have.
+A. etymology C. cause-and-effect
+B. history D. description
+4. It discusses how topic in question functions, including any special materials or conditions
+required.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+5. It shows how the topic fits into a larger category.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+6. It shows how the topic differs from others in the same class.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+7. It shows how the topic is like others in the class.
+A. principles of operation C. contrast/negation
+B. classification D. comparison
+8. It explains by comparing two dissimilar topics, where the second is familiar to the audience.
+A. principles of operation C. examples
+B. analogy D. illustrations
+DAY 1
+Pre-Test
+9. It refers to short, phrase-length definitions.
+A. single C. simplified
+B. double D. extended
+10. It gives readers something familiar to associate the term with.
+A. simplified definition C. informal sentence definition
+B. formal sentence definition D. extended definition
+11. It is the key to writing a good extended definition.
+A. simplify the definition C. choose the sources of definition
+B. extend the definition D. give the literal meaning of the word
+12. It is a way of unlocking meaning of difficult words by defining other terms.
+A. single definition C. simplified definition
+B. double definition D. extended definition
+13. It contains additional potentially unfamiliar terms.
+A. simplified definition C. informal sentence definition
+B. formal sentence definition D. extended definition
+14. It is a way of unlocking meaning of difficult words through additional definitions.
+A. single definition C. simplified definition
+B. double definition D. extended definition
+15. It is a sentence, clause, or phrase in length.
+A. single definition C. simplified definition
+B. short definition D. extended definition
+Pag Improper Answer Report agad</h2><br />
+                        <p><strong>Explanation:</strong></p><p><strong>1</strong><strong>.</strong><strong>A</strong></p><p><strong>2</strong><strong>.</strong><strong>B</strong></p><p><strong>3</strong><strong>.</strong><strong>D</strong></p><p><strong>4</strong><strong>.</strong><strong>D</strong></p><p><strong>5.</strong><strong>C</strong></p><p><strong>6</strong><strong>.</strong><strong>B</strong></p><p><strong>7</strong><strong>.</strong><strong>A</strong></p><p><strong>8.</strong><strong>D</strong></p><p><strong>9</strong><strong>.</strong><strong>C</strong></p><p><strong>10.</strong><strong>C</strong></p><p><strong>11</strong><strong>.</strong><strong>B</strong></p><p><strong>12.</strong><strong>D</strong></p><p><strong>13</strong><strong>.</strong><strong>C</strong></p><p><strong>14</strong><strong>.</strong><strong>A</strong></p><p><strong>15</strong><strong>.</strong><strong>D</strong></p><br />
+                                            <h2 class="ez-toc-section" id="pre-testdirections-read-the-questions-carefully-choose-the-letter-ofthe-correct-answer-and-write-it-on-the-space-provided-before-thenumber-1-the-best-statement-that-describes-an-appetizer-isa-app">
+                            14. PRE-TESTDirections: Read the questions carefully. Choose the letter ofthe correct answer and write it on the space provided before thenumber.1. The best statement that describes an appetizer is?A. Appetizers are attractive in appearance, with good aroma andcontains appealing flavor.B. Appetizers are foods which stimulate the appetite.c. Appetizer is a small pieces or portions of highly seasoned food,usually served before a meal.D. All of the Above2. The following are examples of classification of appetizer except:A. BuffetC. Hors D'OeuvresB. CanapeD. Relishes3. Which of the following ingredients are needed in decoratingcanapes?A. Baking soda, Essential oil, Lemon juice and White sugarB. Cheese, Salami, Steak and Strawberry syrupC. Lettuce, Shrimp, Smoked oysters and Smoked SalmonD. Olives, Pickled onions, Radish slices and Tomatoes4. These are kinds of appetizers that are made up of seafood or fruitwith sauce and usually served chilled.A. CanapesC. Hors D'OeuvresB. CocktailsD. Relishes5. It refers to a thin slices of bread in different shapes which usuallyserved toasted or sautéed.CanapeC. Hors D'OeuvresB. CocktailsD. RelishesA.​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>1:A</p><p>2:C</p><p>3:D</p><p>4:B</p><p>5:Canape</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="true-or-false-11-the-three-planes-of-motion-are-frontal-sagittal-and-transverse-planes-12-most-of-angular-movements-of-humans-occurs-in-frontal-sagittal-and-horizontal-planes-13-bringing-my-a">
+                            15. TRUE OR FALSE 11. The three planes of motion are Frontal, Sagittal, and Transverse Planes. 12. Most of angular movements of humans occurs in Frontal, Sagittal, and Horizontal Planes. 13. Bringing my arms straight forward is a FRONTAL MOVEMENT 14. The planes of movement of my head turned and looking straight to my right side is FRONTAL MOVEMENT. 15. Raising my leg straight forward happens in Sagittal Plane. 16. There are two main types of Muscle Contractions namely Isotonic and Plyometrics 17. The two classification of ISOTONIC contractions are concentrate and Eccentric. 18. Eccentric muscle contraction lengthens to engage. 19. When engaging a muscle, Concentric lengthens the muscle. 20. Isometric muscle contraction does not move a muscle when engaged. 21. Bending my head forward is an example of EXTENSION. 22. Shrugging my shoulders up is CIRCUMDUCTION. 23. Raising my arms to the sides level to my shoulder is Abduction. 24. Closing my hands to a fist form ADDUCTION. 25. When one walks as a PRONATOR, the inner part of one's foot would land first. 26. A SUPINATOR has a longer distance between the knees than a PRONATOR. 27. From a neutral position, my HANDS are facing FRONT. 28. From a neutral position, moving my foot to point to my side is ROTATION. 29. Flexing my head forward is SAGITTAL. 30. Transverse and Horizontal motions involve TWISTING movements. 31. Dynamic stretching is best for warm up. 32. Static stretching relaxes the muscles better than dynamic stretching. 33. Dynamic Stretching is better for warm up, because it mimics more of the actual sporting movements. 34. Push ups is a good test for LOWER BODY muscular performance. 35. Deep Squat exercise is good way to test the UPPER BODY muscular rformand​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hi pwede Po ayusin nyo Po yung mga questions?</p><p>nalilito Po kase Ako e, sasagutan ko sana </p><br />
+                                            <h2 class="ez-toc-section" id="and-healthful-benefits-like-salad-two-or-more-kinds-of-matter-these-are-called-mixtur-what-i-need-to-know-at-the-end-of-this-module-you-are-expected-to-1-classify-homogeneous-and-heterogeneous-mi">
+                            16. and healthful benefits. Like salad two or more kinds of matter. These are called mixtur What I Need to Know At the end of this Module, you are expected to: 1. classify homogeneous and heterogeneous mixtures; S6MT-la-c-1 2. compare Homogeneous and Heterogeneous Mixture; and 3. value the benefits of homogeneous and heterogeneous mixtures at home; What I Know Pre-Test. Multiple Choice: Answer the following questions. Write your answers in your answer sheet. 1. Which of the following is an example of Heterogeneous mixture? A. water B. rainwater C. soft drinks D. sand with water 2. Which of the following is an example of Homogeneous mixture? A. oil with water B. vinegar with oil C. sand with pebbles D. flour with baking powder 3. A compost pile in the backyard for the garden, shows what mixture? A. Heterogeneous B. Homogeneous C. Both A&amp;B D. All answers are incorrect 4. An iced tea juice is an example of what mixturo? A. Homogeneous B. Heterogeneous C. Both A&amp;B D. all answers are incorrect 5. What classification of Mixture does blood belong? A. Heterogeneous B. Homogeneous C. Non-Homogeneous D. both A&amp;B 6. Metal such as Alloys belong to what classification of mixture? 4. Non-Homogeneous B. Heterogeneous C. Homogeneous D. Both A&amp;B 7. Soil is everywhere. What classification of Mixture does soil belong? A. Heterogeneous B. Homogeneous C. Non-heterogeneous D. No answers are correct 8. A Pinakbet dish is composed of different variety of vegetables. What kind of mixture is it? A. Non-heterogeneous B. Homogeneous C. Heterogeneous D. All answers are correct 9. In what type of mixture are the substances evenly distributed throughout the mixture? A. Homogeneous B. Heterogeneous C. all types of mixture D. no types of mixtures 10. Which of the following is an example of homogeneous mixture? A. Salt water B. coffee with water C. blood D. All answers are correct 12​</h2><br />
+                        <p>Answer:</p><p>1,. D</p><p>2. D.</p><p>3. A</p><p>4. A</p><p>5. B</p><p>6. C</p><p>7. A</p><p>8. C</p><p>9. A</p><p>10. D</p><p>Explanation:</p><br />
+                                            <h2 class="ez-toc-section" id="narration-assessment-activity-vii-post-test-read-the-following-statements-carefully-and-identify-what-is-being-described-in-each-number-you-may-choose-your-answer-from-the-pool-of-words-below-hyper">
+                            17. Narration Assessment Activity VII POST TEST. Read the following statements carefully and identify what is being described in each number. You may choose your answer from the pool of words below. Hypertext Description Intertext Claim of Value 1 Context Claim of Fact Paragraph Claim of Policy Mechanics Coherence Classification Comparison &amp; Contrast Cohesion Organization 1. A family that prays together stays together" is an example of what claim? 2. "Musical comedy is the best form of entertainment" is an example of what claim? 3. It asserts that specific policies should be instituted as solutions to problems. 4. Success of teaching depends upon the creativity of the teacher, is an example of what claim? 5. "Gender equality needs to be strengthened in the academe" is an example of what claim? 6. This creates a network of materials linked because of various connections. 7. It is the complex interrelationship between a text and other texts. 8. This refers to the occasion or situation that informs the reader about why a document was written and how it was written. 9. This is the modeling of a text's meaning by another text. 10. It is a non-linear way of presenting information. 11. It is a method of writing a paragraph by drawing pictures with words. 12. This method of paragraph development involves similarities and differences between two things. 13. This gives a written account of an event or story. 14. This is a collection of related sentences with one central idea. 15. This pattern of development classifies or divides people, places, things or ideas into categories. 16. This is achieved when ideas are logically and accurately arranged. 17. This refers to when the details of a paragraph are arranged according to the order in which they happened. 18. It is a set of conventions on how to spell, abbreviate, punctuate and capitalize. 19. This means that the sentences are arranged in a logical manner, making them easily understood by the reader. Page 18 of 18 20. To attain this property, one must be consistent with the use of pronouns.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.</p><p></p><p>2.narration</p><p>3.A claim of policy argues that certain conditions should exist, or that something should or should not be done, in order to solve a problems.</p><br />
+                                            <h2 class="ez-toc-section" id="a-physical-fitness-test-adapted-from-deped-order-no-034-s-2019-part-1-health-related-fitness-components-body-composition-is-the-relative-percentage-of-the-body-fat-to-the-fat-free-mass-body-mas">
+                            18. A. PHYSICAL FITNESS TEST Adapted from DepEd Order No.034 s. 2019 Part 1: Health - Related Fitness Components: Body composition is the relative percentage of the body fat to the fat-free mass. Body Mass Index Formula for computing Body Mass Index Weight in Kilograms Height in Meter2 Example: Classification Below 18.5 Underweight 18.5-24.9 Normal 25.0-29.9 Overweight 30.0-above Obese​</h2><br />
+                        <p>physical fitness</p><p>The body mass index (BMI) is the accepted tool for screening weight status. Although focus is largely on overweight and obesity, low BMIs are used to screen underweight or thinness (1–3). BMI is also included as a component of health-related physical fitness (4–6).</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-3-this-activity-will-allow-you-to-better-understand-the-importance-of-exercise-in-building-total-fitness-and-family-wellness-situdy-the-following-ideas-you-may-do-this-by-looking-for">
+                            19. Learning Task 3: This activity will allow you to better understand the importance of exercise in building total fitness and family wellness. Situdy the following ideas. You may do this by looking for a partner to complete the task BODY COMPOSITION - is the body's relative amount of fat to fat-free mass. Body Mass Index (BMI) WEIGHT in Kilograms] HEIGHT in Meters Example: 30 (1.20P CLASSIFICATION: BELOW 18.5 18.5 - 24.9 25 - 29.9 30.0 ABOVE Underweight Normal Overweight 20.83 (NORMAL) Obese A.1 Weight - the heaviness or lightness of a person. Equipment: Weighing Scale Procedure: For the test taker: a. Wear light clothing. b. On bare feet, stand erect and still with weight evenly distribut ed on the center of the scale.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation</strong> 3: This activity will allow you to better understand the importance of exercise in building total fitness and family wellness. Study the following ideas. You may do this by looking for a partner to complete the task BODY COMPOSITION - is the body's relative amount of fat to fat-free mass. Body Mass Index (BMI) WEIGHT in Kilograms] HEIGHT in Meters Example: 30 (1.20P CLASSIFICATION: BELOW 18.5 18.5 - 24.9 25 - 29.9 30.0 ABOVE Underweight Normal Overweight 20.83 (NORMAL) Obese A.1 Weight - the heaviness or lightness of a person. Equipment: Weighing Scale Procedure: For the test taker: a. Wear light clothing. b. On bare feet, stand erect and still with weight evenly distributed on the center of the scale.​</p><br />
+                                            <h2 class="ez-toc-section" id="pre-testmaxeene-went-to-the-woods-she-saw-animals-with-four-pairs-of-legs-and-2-body-segments-what-animals-did-she-see-a-firefliesb-mitesc-centipedesd-spidersflukes-tapeworms-and-ascaris-are-w">
+                            20. PRE TESTMaxeene went to the woods. She saw animals with four pairs of legs and 2 body segments. What animals did she see? A. firefliesB. mitesC. centipedesD. spidersFlukes, tapeworms and ascaris are worms. Which are examples of Platyhelminthes? A. flukes and tapewormsB. tapeworms and ascarisC. flukes, tapeworms and ascarisD. flukes and ascarisWhat characteristics do sea stars, sea urchins, and brittle stars have in common? A. tube-like in shapeB. sessileC. spiny-skinnedD. smooth-skinnedWorms are invertebrates with soft, slender body. What are the classifications of worms? I. annelids III. arachnids V. platyhelminthes II. arthropods IV. nematodes VI. poriferans A. I, IV, VB. I, III, IVC. I, II, IIID. I, III, VIThe following statement is true EXCEPT A. All invertebrates reproduce asexually.B. All invertebrates do not have backbones.C. Some invertebrates are sessile.D. Some invertebrates undergo life cycle.​</h2><br />
+                        <p><strong>Maxine went to the woods. She saw animals with four pairs of legs and 2 body segments. What animals did she see?</strong></p>[tex]\underline{\boxed{\green{\text{D. Spiders}}}}[/tex]<p>[tex] \: [/tex]</p><p><strong>Flukes, tapeworms and Ascaris are worms. Which are examples of Platyhelminthes?</strong></p>[tex]\underline{\boxed{\green{\text{A. Flukes and Tapeworms}}}}[/tex]<p>[tex] \: [/tex]</p><p><strong>What characteristics do sea stars, sea urchins, and brittle stars have in common?</strong></p>[tex]\underline{\boxed{\green{\text{C. Spiny-skinned}}}}[/tex]<p>[tex] \: [/tex]</p><p><strong>Worms are invertebrates with soft, slender body. What are the classifications of worms?</strong></p>[tex]\underline{\boxed{\green{\text{A. I, IV, V}}}}[/tex]<p>[tex] \: [/tex]</p><p><strong>The following statement is true EXCEPT.</strong></p>[tex]\underline{\boxed{\green{\text{A. All invertebrates reproduce asexually.}}}}[/tex]<p>[tex] \: [/tex]</p><p><strong>#LearnWithBrainly</strong>❤</p><p>[tex]\large\boxed{\text{Together we go Far!}}[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="post-testchoose-the-letter-of-the-best-answer-write-the-chosen-letter-on-a-separate-sheet-of-paper-1-a-dance-developed-by-people-that-reflect-the-life-of-the-people-of-a-certain-country-orregiona-c">
+                            21. POST TESTChoose the letter of the best answer. Write the chosen letter on a separate sheet of paper.1. A dance developed by people that reflect the life of the people of a certain country orregionA. Contemporary DanceC. Ethnic/Folk danceB. Street DanceD. Social dance2. A classification of dance that is suitable for special occasions.A. Festival DanceC. Wedding danceB. Courtship DanceD. Occupational dance3. Lapay Bantigue was originated in the island ofA. PanayC. PalawanB. MasbateD. Negros4. Lapay Bantigue is an example of what classification of dance.A. OccupationalC. ReligiousB. FestivalD. Comic5. What movement is being demonstrated by this; “Raise your right arm and do a horizontal thumbs up. Rotate your hand and wrist four counts clockwise, and another four countscounter-clockwise”A. KumintangC. SalokB. Hayon – hayonD. Wasiwas6. The Philippine national costume for women is.A. Maria ClaraC. KimonoB. Baro at SayaD. Binukot7. Planting, punding and fishing are examples of what classification of dance.A. Wedding DanceC. Courtship DanceB. Festival DanceD. Occupational dance8. Which of the following is not an example of Philippine folk dance.A. Itik-ItikC. ScottishB. MaglalatikD. Pantomina9. Which of the following dance steps used in the dance Lapay Bantigue.A. KumintangC. HabaneraB. MincingD. Polka10. The Philippine national costume for men is.A. IfugaoC. KalingaB. Barong TagalogD. Bahag
+​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.c</p><p>2.a</p><p>3.b</p><p>4.b</p><p>5.a</p><p>6.b</p><p>7.d</p><p>8.c</p><p>9.a</p><p>10.b</p><p><strong>Explanation:</strong></p><p>sana makatulong pa brainliest</p><p></p><p><strong>Answer:</strong></p><p>1.c</p><p>2.a</p><p>3.b</p><p>4.b</p><p>5.a</p><p>6.b</p><p>7.d</p><p>8.c</p><p>9.a</p><p>10.b</p><p><strong>Explanation:</strong></p><p>sana makatulong pa brainliest</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-another-two-examples-of-tool-in-each-classification-and-give-its-uses-you-can-go-to-internetshop-for-further-references-a-measuring-tool1-2-b-marking-lining-tool1-2-c-testing-tool1-2-d-edge">
+                            22. Give another two examples of tool in each classification and give its uses. You can go to internetshop for further references.A. MEASURING TOOL1.2.B. MARKING LINING TOOL1.2.C. TESTING TOOL1.2.D. EDGE-CUTTING TOOL1.2.E. TOOTH-CUTTING TOOL1.2.F. BORING TOOL1.2.G. HOLDING TOOL1.2.H. MISCELLENEOUS TOOL1.2.I. DRIVING TOOL1.2.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Measuring tool</p><p>Tape Measure. A well-worn tape measure signifies a builder who takes their work seriously. ...</p><p>Speed Square. A speed square can be found on the hip of carpenters and DIYers everywhere. ...</p><p>Protractor. ...</p><p>Mechanical Carpenter's Pencil. ...</p><p>Laser Measure.</p><p>Marking lining </p><p>pencil, chalkline, marking gauge, mortise gauge, knife, awl, and divider. </p><p>Testing tool</p><p>Selenium. Selenium is a testing framework to perform web application testing across various browsers and platforms like Windows, Mac, and Linux. ...</p><p>TestingWhiz. ...</p><p>HPE Unified Functional Testing (HP – UFT formerly QTP) ...</p><p>TestComplete. ...</p><p>Ranorex. ...</p><p>Sahi. ...</p><p>Watir. ...</p><p>Tosca Testsuite.</p><p>Edge-cutting tools</p><p>Diagonal pliers and scissors</p><p>Tooth cutting tool</p><p>the Crosscut saw, the Rip saw, the Back saw and the Hack saw.</p><p>Boring tool</p><p>Improved twist drill. ...</p><p>Titanium-coated bit. ...</p><p>Bradpoint bit. ...</p><p>Spade bit. ...</p><p>Powerbore bit. ...</p><p>Auger bit. ...</p><p>Forstner bit. </p><p>Holding tools </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="please-answer-this-correct-write-true-if-the-statement-is-true-and-false-if-it-is-false-____1-body-composition-is-used-to-describe-the-percentage-of-fat-bone-water-and-muscle-in-human-bodies">
+                            23. PLEASE ANSWER THIS CORRECT :(
+Write TRUE if the statement is true and FALSE if it is false.
+____1. Body Composition is used to describe the percentage of fat, bone, water, and muscle in human bodies.
+____2. Fitness is a condition in which an individual has enough energy to avoid fatigue and enjoy life.
+____3. Flexibility is the ability to move a body part through a full range of motion at a joint.
+____4. Balance is a component under Health-Related Fitness.
+____5. Skill-Related Fitness is the ability to become and stay physically healthy.
+____6. Swimming is an example of cardiovascular exercise.
+____7. To be physically fit, goals help us to attain our target.
+____8. Body Mass Index (BMI)- this test determines your body’s classification.
+____9. Physical Fitness is a state of health and well-being that enables the individual to perform well in the aspects of sports, occupations, and daily activities.
+____10. Agility refers to the ability of the muscle or group of muscles to sustain repeated contractions against a resistance for an extended period of time.
+____11. Setting a goal is as easy as sleeping.
+____12. Results are positive if we plan carefully.
+____13. Balance is a component under Health-Related Fitness.
+____14. Motivation is not important in attaining goals
+____15.Setting goals are not important in attaining physical fitness</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.true</p><p>2.true</p><p>3.true</p><p>4.rue</p><p>5.true</p><p>6.true</p><p>7.true</p><p>8.true</p><p>9.true</p><p>10.true</p><p>11.false</p><p>.12.true</p><p>13.true</p><p>14.false</p><p>15.false</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-1directionsinstructions-identify-and-classify-the-following-carpentry-tools-exampleit-is-a-bubble-reading-level-which-answer-level-bar-testing-toolindicates-the-levelness-of-thesur">
+                            24. Learning Task 1Directions/Instructions: Identify and classify the following carpentry tools.Example:It is a bubble reading level which Answer: Level bar - Testing toolindicates the levelness of thesurface being tested.Name ofCarpentry ToolClassification1. It is a retractable tape measure.2. It is a heavy pointed tipsuspended by a string which isused as a vertical reference line.3. It is a tool used forcarving woods and cleaning jointsand saw cuts.4. It is a tool used forcutting woodsmanually.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>my sagot no Hindi mo pala alam eh</p><br />
+                                            <h2 class="ez-toc-section" id="ii-instruction-true-or-false-write-t-if-the-statement-is-true-and-fif-the-statement-is-false-write-your-answer-on-the-spaceprovided-before-the-number-1-recreational-activities-are-done-during-you">
+                            25. II. Instruction: True or False: Write T if the statement is true and Fif the statement is false. Write your answer on the spaceprovided before the number.1. Recreational activities are done during your free time.2. Sit and Reach is an example test for Flexibility.3. Ricalito's height is 1.85m and weighs 75kg, his BMIclassification is Normal?4. Monitoring your progress in health is your parent'sobligation5. Promoting a societal fitness.6. If the goal is weight gain, a person should focus onweigh expenditures.7. BMI depends on person's body composition,8. Stork balance, Standing long jump and hexagonagility test are test for skill related fitness.9. Since we are in a pandemic, all recreational activitiesoutside and at home should stop.10. Doing household chores is healthy.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.true</p><p>2.false</p><p>3.true</p><p>4.true</p><p>5.true</p><p>6.false</p><p>7.false</p><p>8.true</p><p>9.true</p><p>10.false</p><br />
+                                            <h2 class="ez-toc-section" id="pre-testdirections-read-the-questions-carefully-and-choose-the-letterof-the-your-answer-c-five1-what-are-the-animals-with-backbonesa-predatorsc-reptilesb-vertebratesd-invertebrates2-how-many">
+                            26. Pre-testDirections: Read the questions carefully and choose the letterof the your answer.c. five1. What are the animals with backbones?a. predatorsc. reptilesb. vertebratesd. invertebrates2. How many groups do vertebrates havea. sixb. fourd. seven3. How do birds reproducea. by giving birthc. by making a nestb. by laying eggsd. by live their young4. Which of these classification of vertebrates do not lay eggs?a. fishc. mammalsb. reptilesd. amphibian5. How do mammals feed their young?a. by using their gillsc. by using their tailb. by using their mammary glandd. by using their beak6. What do fishes used in breathinga. finsc. tailb. scalesd. gills7. Why reptiles different from amphibians? Because they havea. feathersc. mouthsb. hard skin/shelld. moist body8. Which can live both on land and in watera. fishesc. birdsb. amphibiansd. mammals9. Humans belong toa. birdsc. mammalsb. reptilesd. amphibians10. A parrot is an example ofa. birdC. fishb, mammald. amphibian​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.b</p><p>2.?</p><p>3.b</p><p>4.c</p><p>5.b</p><p>6.d</p><p>7.b</p><p>8.b</p><p>9.c</p><p>10.a</p><p><strong>Explanation:</strong></p><p>sana maka tulong;)</p><br />
+                                            <h2 class="ez-toc-section" id="physical-education-directions-read-and-analyze-each-item-carefully-write-the-letter-of-the-correct-answer-in-your-answer-sheet-d-curl-up-1-which-of-the-following-best-improves-agility-a-body-mass">
+                            27. PHYSICAL EDUCATION: Directions: Read and analyze each item carefully write the letter of the correct answer in your answer sheet D. Curl up 1. Which of the following best improves agility? A Body Mass Index B. 1km Run/ Walk Test C. 40m sprint D Hexagonal 2. It measures the strength of the abdominal muscles. A Sit and reach B. Standing long jump C Push up 3. It consists of agility, balance, speed, reaction time and power A Physical fitness B. Health-related fitness C. Skill-related fitness D. Diet 4. What is the fitness parameter being measured in Zipper test? A Agility B Balance C. Coordination D. Flexibility 5. It is a type of stretching that prepares the muscles for active contraction. A Dynamic stretching B Warm-up stretching C Static stretching D. Flexibility stretching 6. The following are example of static stretching, EXCEPT ONE, what is it? A March and reach B. Upper back stretch C. Calf stretch D. Knee stretch 7. The following are example of dynamic stretching, EXCEPT ONE, what is it? A Front swing B. Plank walk outs C. Lunge torso twist D. Chest stretch 8. It is done by doing gradual stretching activities from upper to lower extremities A Strength exercise B. Warm-up exercise C. Flexibility exercise D. Endurance exercise 9. It is the ability to perform movement or cover a distance for a short period of time A Muscular strength B. Reaction time C. Flexibility D. Speed 10. What would happen if you will not address your poor physical fitness test result? A There is a range of muscle joints that may develop C. There will be fast heart rate per minute B. There is an increase of muscle fatigue D. There is a risk of having cardiovascular diseases 11. It consists of cardio vascular endurance, muscular strength and endurance flexibility and body composition B. Health-related fitness A Physical fitness D. Diet C. Skill-related fitness 12. James waistline is 5 inches bigger than Gab with BMI classification of overweight while Gab's BMI classification is normal. What does this mean? A. The bigger the waistline, the more body fat amount C. The bigger the waistline, the more water content B. The smaller the waistline, the cheaper the clothes D. The smaller the waistline, the lesser blood supply 13.It is a type of stretching appropriate in cool down exercise as it help muscles to relax, realign muscles fibers and re-establish normal range of movement C. Static stretching D. Flexibility stretching A Dynamic stretching B. Warm-up stretching 14. Coordination is the ability to use the senses together with the body parts during movement. What is the best example of an activity thay would develop coordination? B. Dancing C. Hitting the tennis ball D. Paper juggling A. Sit and reach 15. It is the body's ability to function effectively and efficiently without undue fatigue in work, leisure activities to meet emergency situations and to resist diseases from sedentary lifestyle C. Physical Educa​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1-A</p><p>2-B</p><p>3-C</p><p>4-D</p><p>5-A</p><p>6-B</p><p>7-D</p><p>8-C</p><p>9-A</p><p>10-D</p><p>11-A</p><p>12-C</p><p>13-B</p><p>14-D</p><p>15-B</p><br />
+                                            <h2 class="ez-toc-section" id="ce-fuines-tesis-1-do-the-following-to-prepare-for-the-tests-review-the-procedures-in-conducting-the-pft-wear-the-appropriate-attire-do-the-warm-up-exercises-on-your-own-or-with-your-partner-re-or">
+                            28. ce FUINES TESIS 1. Do the following to prepare for the tests. Review the procedures in conducting the PFT. Wear the appropriate attire. Do the warm-up exercises on your own or with your partner. Re-orient yourself on the proper execution of the tests and recording of test results. Go through the test without exerting maximum effort. Observe safety 2. Perform the tests with someone assist you. 3. Record your test results. HEALTH-RELATED FITNESS TESTS: A. BODY MASS INDEX (BMI) The following formula is used to get the BMI BMI = Weight (kg) Height (m)2 Example: BMI = 48 kg (1.50 m) 2 BMI= 21.33 - NORMAL Classification: Below 18.5 - Underweight 18.6 - 24.9 - Normal 25 – 29.9 - Overweight 3.0 - Above - Obese A.1 Weight - the heaviness or lightness of a person. Equipment: Weighing Scale Procedure: For the test taker:​</h2><br />
+                        <p><strong>Answer:</strong></p><strong>this </strong><strong>can </strong><strong>be </strong><strong>answered </strong><strong>by </strong><strong>you,</strong><strong>yourself</strong><br />
+                                            <h2 class="ez-toc-section" id="c-flexibility1-roy-is-15-years-old-he-wanted-to-exercise-his-lungs-by-doing-a-1-kilometer-run-evenwhat-is-the-best-time-he-need-to-achieve-his-goalb-418c-4142-sit-and-reach-exercise-is-an-exa">
+                            29. c. Flexibility1. Roy is 15 years old. He wanted to exercise his lungs by doing a 1-kilometer run evenWhat is the best time he need to achieve his goal?b. 4:18C. 4:142. Sit and Reach exercise is an example of what component of Health-related fitness?a. Muscular Strengthb. Muscular Enduranced. Body Composition3. Refers to the heaviness or lightness of a person.a. Weightb. Waistlinec. Height d. Fat4. Therese is looking for a dress to wear on her friend's birthday. At the mall, sheaattendant to look for a dress with 40 inches waistline. What is the standard classificTherese's waist circumference?a. Highb. Very Highc. Lowd. Very Low5. This exercise aims to measure the strength of abdominal muscles.a. Push-upsb. Curl-upsc. Pull-upsd. Squats6. What is the standard score of Phillip's Zipper Test of 3.5 cm?b. 3d. 47. Flexibility is an important aspect of fitness. Which of the following statements below dterm FLEXIBILITY?a. a form of physical activity designed to improve healthb. the range of motion possible at a jointc. the ability to move from one position to another easilyd. a performer who can take on any different rolesa. 1C. 2ondurance activity​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Yan lang ang kaya ko </p><p><strong>Explanation:</strong></p><p>1.A</p><p>2.B</p><p>3.B</p><p>4.A</p><p>5.A</p><p>6.B</p><p>7.A</p><br />
+                                            <h2 class="ez-toc-section" id="classifications-of-mixtures-1-homogenous-mixture-uniform-mixtures-have-one-notable-characteristics-having-single-appearance-or-phase-hence-the-term-homogenous-from-latin-word-homo-meaning-the">
+                            30. CLASSIFICATIONS OF MIXTURES 1. Homogenous mixture (uniform mixtures) - have one notable characteristics- having single appearance or phase; hence the term homogenous from Latin word homo, meaning "the same". Examples: a. hard alcohol b. soy sauce C. wine d. vinegar e, coffee f. blood 2. Heterogeneous mixture (non – uniform mixtures) - in which its components have no fixed amount and can be easily recognized and separated from the mixture, Examples: a. salad b. mixed nuts c. Cereal in milk d. Vegetable soup *Activity Written Test 1. From the short information that you have read about mixtures, answer the following questions. Write the answer in a sheet of paper. 1. What is a mixture? 2. What are the 2 types of mixtures? and ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.D</p><p>2.B</p><p><strong>Explanation:</strong></p><p>hope it helps you</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/hBKI7XvD8R8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>technology_and_home_economics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/climax-of-the-monkey-s-paw.html">Climax Of The Monkey s Paw</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/white-s-model-of-communication-explanation.html">White s Model Of Communication Explanation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/maestro-celestino-rizal-s-tutor.html">Maestro Celestino Rizal s Tutor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/7-c-s-of-business-letter.html">7 C s Of Business Letter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/pagyanig-ng-lupa.html">Pagyanig Ng Lupa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/non-defective.html">Non Defective</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/respiratory-system-multiple-choice-questions-and-answers.html">Respiratory System Multiple Choice Questions And Answers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/ilahad-ang-pagkakapareho-at-pagkakaiba-ng-pagsulong-at-pag-unlad.html">Ilahad Ang Pagkakapareho At Pagkakaiba Ng Pagsulong At Pag Unlad</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/magna-carta-for-public-school-teachers-in-the-philippines.html">Magna Carta For Public School Teachers In The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/are-you-a-yandere-quiz.html">Are You A Yandere Quiz</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/nanggilalas.html">Nanggilalas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/mga-larawan-ng-malinis-na-pamayanan.html">Mga Larawan Ng Malinis Na Pamayanan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/lehislatibong-sangay-sa-lungsod.html">Lehislatibong Sangay Sa Lungsod</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/management-information-system-exam-questions-and-answers.html">Management Information System Exam Questions And Answers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/sleep-tight-tagalog.html">Sleep Tight Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/the-greedy-crane.html">The Greedy Crane</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/ang-cupid-at-psyche-ay-isang.html">Ang Cupid At Psyche Ay Isang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/dalamhati-kahulugan.html">Dalamhati Kahulugan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/structural-moral-dilemma.html">Structural Moral Dilemma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/misa-de-gallo-meaning.html">Misa De Gallo Meaning</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://toptenstudi.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://toptenstudi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

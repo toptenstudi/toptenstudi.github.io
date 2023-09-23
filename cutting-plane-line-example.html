@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cutting Plane Line Example - QnA</title>
+    <meta name="description" content="Cutting Plane Line Example, , , , , , , 0, 1 - Cutting plane example - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, cutting-plane-line-example, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cutting Plane Line Example - QnA" />
+    <meta property="og:description" content="Cutting Plane Line Example, , , , , , , 0, 1 - Cutting plane example - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, cutting-plane-line-example, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cutting Plane Line Example - QnA" />
+    <meta name="twitter:description" content="Cutting Plane Line Example, , , , , , , 0, 1 - Cutting plane example - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, cutting-plane-line-example, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://toptenstudi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://toptenstudi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://toptenstudi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://toptenstudi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://toptenstudi.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://toptenstudi.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Cutting Plane Line Example</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">JesusCarloJOjeda</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Cutting+Plane+Line+Example" alt="Cutting Plane Line Example">
+                    </div>
+                    <p></p>
+                    <p>Identify what view located the following views
+Example 1. Center line - Top view
+2. Leader line - 
+3. Extension line -
+4. Dimension line -
+5. Object line -
+6. Centre line -
+7. Hidden line -
+8. Long break line -
+9. Cutting plane line -
+10. Section line -</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-what-view-located-the-following-viewsexample-1-center-line-top-view2-leader-line-3-extension-line-4-dimension-line-5-object-line-6-centre-line-7-hidden-line-8-long-br">1.
+                                            Identify what view located the following views
+Example 1. Center line - Top view
+2. Leader line - 
+3. Extension line -
+4. Dimension line -
+5. Object line -
+6. Centre line -
+7. Hidden line -
+8. Long break line -
+9. Cutting plane line -
+10. Section line -</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-the-formula-in-calculating-an-area-of-rectangle-is-as-b4-side-cl-d-prade-prism-whose-faces-are-congruent-one-of-its-examples-is-dice-con-b-cube-c-cylinder-dlcosahed-17-this-type-of-quadrilatera">2.
+                                            15. The formula in calculating an Area of Rectangle is AS B4 side CL D. prade prism whose faces are congruent. One of its examples is dice Con B Cube C Cylinder Dlcosahed 17. This type of quadrilateral has four equal sides and four equal angles Asosceles trapezoid B. Square C. Rectangle 18. A concave, spring-steel blade measuring tool used for accurately measuring curved sur A Protractor B. Triangles C. Tape Ruler D. T-Square 19. Athio ine that represents the outline of the object, also known as the object line denne B. Visible line C. Cutting-plane line D. Pha 20 Atines to show the surface that has been cut they are spaced evenly at 45 deg to make shaded effect Center ine B. Extension line C. Leader line DSee 21 Anong the following Alphabet of lines which has thick line wight A Long-break line B. Dimension line C. Short-break line 0. Center Line 22 Among the following Alphabet of lines which has medium line weight A Hidden line B. Visible line C. Cutting-plane line D Pharor 23 The following are three planes of projection except A Frontal plane B. Horizontal plane C Side plane D. Profile plane type of oblique drawing uses full size on its width, depth or length B Cavalier C General D. All the choice​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5sheet-ofpaper1-which-of-the-following-is-defined-as-an-exact-location-in-spacec-planea-line-segment-b-midpoint2-which-is-a-part-of-a-line-that-is-bounded-by-two-endpointsc-line-portiona-cut-li">3.
+                                            5sheet ofpaper1. Which of the following is defined as an exact location in spaceC. planeA. line segment B. midpoint2. Which is a part of a line that is bounded by two endpoints?C. line portionA cut-lineB. line piece3. Which object is an example of a straightedge used to draw strC. needleA. ballB. box4. It is a straight path that goes on without end in two directionA. lineB. plane5. Which of the following is a point that divides a line segmentA. endpoint B. interiorC. midpointWhat do you call a flat surface that extends forever in all dirA. angleB. areaC. rayC. plane​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-which-of-the-following-is-defined-as-an-exact-location-in-spacea-line-segmentb-midpoint-c-planed-point2-which-is-a-part-of-a-line-that-is-bounded-by-two-endpointsa-cut-lineb-line-piecec-lin">4.
+                                            1. Which of the following is defined as an exact location in space?A line segmentB. midpoint C. planeD. point2. Which is a part of a line that is bounded by two endpoints?A cut-lineB. line pieceC. line portionD. line segment3. Which object is an example of a straightedge used to draw straight lines?A ballB. boxC. needleD. ruler4. It is a straight path that goes on without end in two directions. What is it?A lineB. planeD. triangle5. Which of the following is a point that divides a line segment into two equal parts?B. interiorA. endpointC. midpointD. vertex6. What do you call a flat surface that extends forever in all directions?A. areaB. angleC. surface areaD. plane​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-vertical-angles-formed-by-intersecting-lines-are-congruent-a-linear-pair-theoremb-vertical-angles-theoremc-corresponding-angles-theorem2-if-two-parallel-lines-are-cut-by-a-transversal-then-cor">5.
+                                            1. Vertical angles formed by intersecting lines are congruent.A. Linear Pair TheoremB. Vertical Angles TheoremC. Corresponding Angles Theorem2. If two parallel lines are cut by a transversal, then corresponding angles are congruent.A. Corresponding Angles Postulate B. Perpendicular Transversal TheoremC. Linear Pair3. Find the value of x so that two lines are parallelA. 52B. 72(x + 76)c. 62M(14 + 2x)4. From question No. 3. (x +76)° is theof angie (14 + 2x)A. Alternate Exterior Angle B. Alternate Interior Angle C. Intersecting Lines5. Lying on the same plane.A. Congruent AnglesC. LinearB. Coplanar6. Two angles that form linear pair areA. CoplanarB. CongruentC. Supplementary7.The illustration is an example ofA. Linear PairB. Vertical AngleC. Supplementary Anglenent​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-vertical-angles-formed-by-intersecting-lines-are-congruent-a-linear-pair-theoremb-vertical-angles-theoremc-corresponding-angles-theorem2-if-two-parallel-lines-are-cut-by-a-transversal-then-cor">6.
+                                            1. Vertical angles formed by intersecting lines are congruent.A. Linear Pair TheoremB. Vertical Angles TheoremC. Corresponding Angles Theorem2. If two parallel lines are cut by a transversal, then corresponding angles are congruent.A. Corresponding Angles Postulate B. Perpendicular Transversal TheoremC. Linear Pair3. Find the value of x so that two lines are parallelA. 52B. 72(x + 76)c. 62M(14 + 2x)4. From question No. 3. (x +76)° is theof angie (14 + 2x)A. Alternate Exterior Angle B. Alternate Interior Angle C. Intersecting Lines5. Lying on the same plane.A. Congruent AnglesC. LinearB. Coplanar6. Two angles that form linear pair areA. CoplanarB. CongruentC. Supplementary7.The illustration is an example ofA. Linear PairB. Vertical AngleC. Supplementary AnglenentPa help follow ko makakasagot❤​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#9-miscellaneous-equipment-are-the-things-that-are-nor-obligatory-but-make-a-good-working-environment-for-the-worker-which-of-the-following-is-an-example-of-miscellaneous-equipment-a-office-stati">7.
+                                            9. Miscellaneous equipment are the things that are nor obligatory but make a good working environment for the worker . Which of the following is an example of miscellaneous equipment ? A. Office stationery B. Printer C. Shredder D. Webcam 10. Computers need to be properly maintained to get work done well . Which of the following is one great reason why computer maintenance is a good idea ? A. It increases the likelihood of data loss . B. detects Issues early C. It opens a door for viruses and malware . C. It slows down the computer . 11. Cleaning the computer monitor and / or television is essential to prolong its usefulness . Which of the following is not an effective way to do it ? A. Not spraying liquid directly on the screen B. Using a dry , soft , lint - free cloth Using a solution of mild soap and water C. Using solvents or abrasives 12. What stage refers to the remaining activities that complete the guest cycle ? A. Post departure B. Post - registration C. Registration D. Reservation13. Most hotels and companies are income generating Which of the following refers to the daily business or sales report of a business or company ? A. Calculation report B. Financial report C. Group status report D. Income report 14. Hazards come in different types or forms . Which of the following hazards deals with the things that can cause damage to one's mental health ? A Biological B. Chemical C. PhysicalPsychological 15. If medium lines are drawn at 45 degrees to show the interior view of solid areas of cutting plane lines , what do you call these lines ? A. Cutting plane line B. Leader line C. Phantom line D. Section line​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#33-represent-the-following-using-real-life-examples-i-point-ii-line-iii-plane-a-i-edge-of-a-foot-rule-ii-tip-of-a-pencil-iii-a-sheet-of-paper-b-i-a-sheet-of-paper-ii-edge-of">8.
+                                            33. Represent the following using real-life examples: (i) point, (ii) line, (iii) plane. A. (i) edge of a foot rule, (ii) tip of a pencil, (iii) a sheet of paper B. (i) a sheet of paper, (ii) edge of a foot rule, (iii) tip of a pencil C. (i) tip of a pencil, (ii) edge of a foot rule, (iii) a sheet of paper D. (i) a sheet of paper, (ii) tip of a pencil, (iii) edge of a foot rule 34. What is the sum of the interior angles of any quadrilateral? A. 900° B. 720° C. 540° D. 360° 35. The ratio of an interior angle and an exterior angle of a regular polygon is 3:2. How many sides does the polygon have? A. 10 B. 8 C. 6 D. 5 36. In Figure 3, point B is the center of the bigger circle and point C is the center of the smaller circle. Diameter AD passes through points B and C. If diameter AD measures 20 cm, what is the area of circle C? A. 78.5 cm Figure 3 B. 314 cm2 C. 706.5 cm? D. 1256 cm2 37. What must be the angle cut of the wood pieces if you want to join them to create a hexagonal wooden frame? A. 60-degree angle cut B. 45-degree angle cut C. 30-degree angle cut D. 15-degree angle cut 38. Figure 4 is a net of square pyramid. If the 4 triangular surfaces are isosceles triangles and angle A measures 44", what is the measure of ZABC? A. 128° B. 136° Figure 4 C. 178° D. 226​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directionsa-read-the-questions-carefully-write-the-letter-of-the-correct-answer-on-the-spaceprovided-_____1-which-of-the-following-represents-pointa-edge-of-a-ruler-b-guitar-string-c-tip-of">9.
+                                            Directions
+A. Read the questions carefully. Write the letter of the correct answer on the space
+provided.
+_____1. Which of the following represents point?
+A. Edge of a ruler B. Guitar string C. Tip of a pen D. Wall
+_____2. It is the side of an angle.
+A. Line B. Ray C. Segment D. Plane
+_____3. It is a subset of a line that can be measured and ends with two endpoints.
+A. Arrow B. line C. Ray D. Segment
+_____4. Which of the following angle measures is an example of acute angle?
+A. 75 0 B. 90 0 C. 100 0 D. 180 0
+_____5. What do you call an angle that measures greater than 90 0 ?
+A. Acute angles B. Obtuse angles C. Right Angles D. Straight angles
+_____6. Which of the following represents line?
+A. Corner of a table B. rope C. Tip of a needle D. Mirror
+_____7. What geometric idea is pictured by a page of a newspaper?
+A. Line B. Ray C. Point D. Plane
+_____8. Which of the following represents a plane?
+A. B. C. D.
+_____9. A strand of the hair is a representation of?
+A. Point B. Line C. Plane D. None of the a
+___10. What kind of angle is being represented by figure?
+A. Acute angles B. Obtuse angles C. Right Angles D. Straight angles
+_____11. Complementary angles measures?
+A. 90 o B. 180 o C. 120 o D. 360 o
+_____12. If the sum of two angles is equal to 180 o , then these are known as?
+A. Complementary Angles C. Linear Pair Angles
+B. Supplementary Angles D. Congruent Angles
+_____13. Adding the measures of two adjacent angles resulting to a sum of 180 o . These
+angles are known as?
+A. Supplementary Angles C. Linear Pair Angles
+B. Congruent Angles D. Complementary Angles
+_____14. These are intersecting lines that form right angles.
+A. Parallel B. Perpendicular C. Vertical D. Congruent
+_____15. Lines that do not intersect.
+A. Parallel B. Perpendicular C. Vertical D. Congruent Angles
+_____16.∠A and ∠B are complementary angles. If ∠A=52 o , what is the ∠B?
+A. 38 o B. 52 o C. 142 o D. 150 o
+____17. If a pair of parallel lines is cut by a transversal, how many angles are formed?
+A. 4 B. 6 C. 8 D. 12
+For items 8-10 refer to the figure.
+_____18. How many vertical angles are formed?
+A. 3 B. 4 C. 5 D. 6
+_____19. If m∠3 =70 o , Find m∠2
+A. 20 o B. 70 o C. 90 o D. 110 o
+_____20. If m∠6 =42 o , Find m∠8
+A. 42 o B. 48 o C. 132 o D. 24</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-18-whats-fact-about-detail-drawing-detail-drawings-are-created-on-standard-paper-sizes-b-a-detail-drawing-provides-a-detailed-description-of-an-object-a-detail-drawing-is-a-tool-used-by-engin">10.
+                                            a. 18. What's fact about detail drawing? Detail drawings are created on standard paper sizes. b. A detail drawing provides a detailed description of an object. A detail drawing is a tool used by engineers to communicate their designs to manufacturers and to preserve their work for future generations. d. All of the choices are correct. C.I. TRUE or FALSE Instruction: Write the whole word TRUE if you agree with the statement while FALSE if not. Write your answer on the blank space provided. (Please use this paper as your answer sheet) 1. In the General Assembly drawings, all parts are drawn in their working position. This includes orthographic drawings of assembled products, parts lists, and related data needed in manufacturing process.2. An Assembly drawing conveys the completed shape of the product, overall dimensions, relative position of each part and the functional relationship among various components. 3. Working drawings are composed according to industry standards so that all the information is easily and clearly understood, and standard conventions and units are used. 4. There are two distinctive types of working drawings; the Detail and Assembly drawings. 5. A Detail Assembly drawing shows how all components are assembled and provides all the necessary details, dimensions and joining techniques to fully assemble all or part of the project. 6. Exploded, General, Layout, Detail Assembly drawings are examples of a Detail Working drawings 7. In the Layout Assembly drawing, the parts are separately displayed, but they are aligned according to their assembly positions and sequences. 8. The Exploded assembly drawing shows rough preliminary design ideas sometimes in a sketch form. 9. A Detail Assembly drawing has several detailed drawings within it. 10. Working drawings are drawings used as a reference or guide in the manufacture of a product. 11. Half Section is obtained when the cutting-plane extends entirely through the object in a straight line and the front half of the object is totally. 12. Full Section refers to one quart of the object to be cut or removed. 13. In constructing Assembly Drawings, if there are intemal assemblies, sectional views should be used. 14. Sectional view is a method of drawing presentation showing the interior part part of the building especially when the inner parts are complicated. 15. Dimensions in detailed drawing should be shown clearly.​​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#i-true-or-false-instruction-write-the-whole-word-true-if-you-agree-with-the-statement-while-false-if-not-write-your-answer-on-the-blank-space-provided-please-use-this-paper-as-your-answer-sheet">11.
+                                            I. TRUE or FALSE Instruction: Write the whole word TRUE if you agree with the statement while FALSE if not. Write your answer on the blank space provided. (Please use this paper as your answer sheet) 1. In the General Assembly drawings, all parts are drawn in their working position. This includes orthographic drawings of assembled products, parts lists, and related data needed in manufacturing process.2. An Assembly drawing conveys the completed shape of the product, overall dimensions, relative position of each part and the functional relationship among various components. 3. Working drawings are composed according to industry standards so that all the information is easily and clearly understood, and standard conventions and units are used. 4. There are two distinctive types of working drawings; the Detail and Assembly drawings. 5. A Detail Assembly drawing shows how all components are assembled and provides all the necessary details, dimensions and joining techniques to fully assemble all or part of the project. 6. Exploded, General, Layout, Detail Assembly drawings are examples of a Detail Working drawings 7. In the Layout Assembly drawing, the parts are separately displayed, but they are aligned according to their assembly positions and sequences. 8. The Exploded assembly drawing shows rough preliminary design ideas sometimes in a sketch form. 9. A Detail Assembly drawing has several detailed drawings within it. 10. Working drawings are drawings used as a reference or guide in the manufacture of a product. 11. Half Section is obtained when the cutting-plane extends entirely through the object in a straight line and the front half of the object is totally. 12. Full Section refers to one quart of the object to be cut or removed. 13. In constructing Assembly Drawings, if there are intemal assemblies, sectional views should be used. 14. Sectional view is a method of drawing presentation showing the interior part part of the building especially when the inner parts are complicated. 15. Dimensions in detailed drawing should be shown clearly.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#additional-activities-directions-this-is-an-example-of-a-working-machine-drawing-label-the-following-items-with-the-corresponding-alphabet-or-line-choose-your-answers-on-the-box-provided-below-wri">12.
+                                            Additional Activities DIRECTIONS: This is an example of a working machine drawing. Label the following items with the corresponding Alphabet or Line, Choose your answers on the box provided below. Write your answers on your TLE - Technical Drafting Activity Nombook Center Line Section Line Visible Line Long Break Line Hidden Line Cutting Plane Line Extension Line Dimension Line E NOU THROUGH NOUL HOLE, A HOLES 1000 in 1 200 in 10.00 - -20.00 PLAN FRONT 1. 2. 5. 6. 6. 7. 8. 3 4.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-choose-the-best-answer-and-write-it-on-the-space-provided1-what-term-is-best-used-to-describing-such-drawing-accomplished-without-the-use-of-drawing-instrumentsb-painting2-which-among-o">13.
+                                            Direction: Choose the best answer and write it on the space provided1. What term is best used to describing such drawing accomplished without the use of drawing instruments?B. Painting2. Which among of the given line is produced by a left handed?C. SketchD. PortraitА.D.B.C.3. How many view does a certain object has?A. 2B.4C6D.84.What kind of line is drawn applying downward strokes?A. SlantedB. HorizontalC. StraightD. Vertical5. What view is behind the front view?A. RearB. TopC. Left sideD. Bottom6. Which line is drawn from either left to right or vice versa?A. HorizontalB. Line segmentC. VerticalD. Slanting7. WORD ANALOGY: Orthographic Projection - line drawn on a flat surface /- shows vievof an object from 90 degrees angleA. SketchB. Free hand drawing C. Orthographic view D. Alphabets of line8. What is form when a plane of projections meets each other?A. LineB. ViewsC. AngleD. Quadrant9. It refers to the upright distance between two horizontal planes.A. DepthB. WithC. HeightD. Line10. WORD ANALOGY: Center line- represents the axis/represents edges that cannot beSeen?A. Dimension lineB. Visible lineC. Hidden lineD. Long break line11. Which line is drawn downward with inclined strokes?A. VerticalB. VisibleC. HorizontalD. Diagonal12. It is the erect distance between two frontal planes.A. DepthB. HeightC. WidthD. Size13. Which among of the illustration is a curved line?AB.C.14. Which among of the quadrants produce in a plane of projection is/are utilize in drafting purpoA. FirstB. SecondC. ThirdD. First and Third15. This type of line shows the details of the part that has been broken out.A. Section lineB. Long break line C. Dimension line D. Extension line16. Which among of the example is a hidden line?A.B. -C. ---D.17. It is a skinny line that outspreads from the object in order to show length limits.A. Extension lineB. Visible lineC. Center lineD. Phantom line18. The following are the planes of projection used in orthographic drawing EXCEPT:A. Rear planeB. Horizontal plane C. Profile plane D Frontal plane19. Which is an example of a visible line?С.D.20. WORD ANALOGY: Phantom line-shows position (s) of part of an object that moves/- indicate an imaginary cut through an objectA. Extension lineB. Cutting plane line C. Hidden line D. Short-break line​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-multiple-choicedirections-choose-the-letter-of-your-answer-write-it-on-the-space-provided-before-each1-carpenters-are-using-different-classes-of-tools-in-carpentry-an-example-of-a-measura-gogg">14.
+                                            B. Multiple ChoiceDirections: Choose the LETTER of your answer. Write it on the space provided before each1. Carpenters are using different classes of tools in carpentry. An example of a measurA. gogglesB. ChiselC. Steel ruleD. Chalk lin2. How about lining or marking tool?A. gogglesD. Chalk linB. ChiselC. Steel rule3. Tools that have sharp edges and are used to carve and cut woods and a member ofA. gogglesB. ChiselC. Steel ruleD. Chalk lin4. Example of equipment worn by a carpenter or worker to avoid potential harm that miA. gogglesB. ChiselC. Steel ruleD. Chalk li5. Which of the following tools is used in sharpening tooth cutting tools?A. electric grinderB. oilstoneC. sandpaperD. triangul6. Which of the following is the correct procedure in sharpening edge- cutting tools?A. grinding - honing- whettingC. honing- whetting- grindingB. grinding - whetting- honingD. whetting- honing-grinding7. What is the classification of tools that are condemned?A. functionalB. non-functionalC. to be repaired.D. to be re8. What do you call to a liquid substance introduced between two movingA. glueB. lubricantparts to reduD. waterC. sealant9. What is the process of reshaping cutting edge of a plane or chisel to remove the nicB. GrindingA. filingC. JointingD. whettir10. What kind of tool is used in setting the teeth of a saw?B. saw setA. plierC. triangular slim taper fileD​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#test-tildirections-put-a-check-if-the-statement-is-correct-and-cross-x-if-it-is-wrongwrite-your-answer-on-the-space-provided-before-the-number-12-simple-machines-are-tools-that-make-work-easier-1">15.
+                                            TEST TILDirections: Put a check) if the statement is correct and cross (X) if it is wrongWrite your answer on the space provided before the number.12. Simple machines are tools that make work easier.13. The six types of simple machines make our life easier every day.14. There are twelve types of simple machines.15. Simple machines are not important.16. A pulley is used to lift something up specially to lift the heavy objects.17. Lever is a device consist fixed movable point called the fulcrum.18. The lever makes it harder to lift heavy materials, remove tight objects and cut items.19. There are five parts of lever that are very helpful20. Wedge is a double inclined plane that is sharpened to an end.21. The fork, knife, peeler, nail, pin and needle are examples of wedge.22. Cars, pencil sharpeners, fans, and in-line skates all use the wheel and axle23. Lifting the object using an inclined plane means you use less force to do work.24. Inclined plane is a flat surface with one end higher than the other.25. The spiral ridges are referred to as thread and the distance each thread is referred to as pitch.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-multiple-choice-write-the-letter-of-your-choice-in-your-answer-sheet-1-which-angle-has-single-measure-a-right-angle-b-acute-c-obtuse-d-all-of-these-2-which-is-not-an-undefined-term-in-geomet">16.
+                                            1. Multiple choice: Write the letter of your choice in your answer sheet. 1. Which angle has single measure? a right angle b. acute c obtuse d. all of these 2. Which is NOT an undefined term in geometry? a line b. angle c. plane d. point 3. What is used to name a point? a. one cursive lowercase letter c. one uppercase letter b. one lowercase letter d. one uppercase letter 4. Which has no width but has length and extends indefinitely on both sides? a. angle b. plane c. ray d. line 5. Which is a subset of a line that has one endpoint and extends indefinitely on one side? a ray b. line segment cline d. angle 6 Which Illustrate a ray? a C d. 7. Which shows a line segment? 9 d b 8. An angle that measures less than 90' but more than o' is a /an a. obtuse angle b. right angle c. acute angle d. straight angle 9. If m 130' then it is a/an. a. acute angle b. right angle C. straight angle d. obtuse angle 10. What instrument is used to measure an angle? a protractor b. measuring tape c.ruler d. compass 11. Two angles share a common side and a vertex. Which of the following best describes the pair of angles if their sum is 90°? a. adjacent and complementary c. non-adjacent and complementary b. adjacent and supplementary d. non-adjacent and supplementary 12. Which of the following statements is true? a. In parallel lines, the distance between the two lines is fixed and the two lines are going in the same direction. b. Perpendicular lines are lines that meet at a point. When two lines intersect, they define angled at the point of Intersection c. Skew lines are lines that are coplanar and can never intersect at any given point. d. Two lines intersect at more one point and they define angles at the point of intersection. 13. Which pair of angles are linear pair? Aand 4 D. 2 und 45 14. Which of the following is the best example of pairs of lines that are parallel? à, consecutive sides of a window c. railway line crossing b. intersection of roadways d. two opposite edges of a door 15. The measure of a complement of an angle is equal to the twice the measure of an angle. What is the measure of the supplement of the angle? b.130 c. 140 d. 150 16. Which of the following statements is CORRECT when parallel lines are cut by a transversal? a. The sum of the degree of corresponding angles is 180° b. The sum of the degree measure of complementary angle is 180° c. The angles is vertical pair are acute. a. 120 d. Corresponding angles are congruent. 17. Which of the statement below is ALWAYS TRUE? a. Any two acute angles are complementary,​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#9-miscellaneous-equipment-are-the-things-that-are-nor-obligatory-but-make-a-good-working-environment-for-the-worker-which-of-the-following-is-an-example-of-miscellaneous-equipment-a-office-stati">17.
+                                            9. Miscellaneous equipment are the things that are nor obligatory but make a good working environment for the worker . Which of the following is an example of miscellaneous equipment ? A. Office stationery B. Printer C. Shredder D. Webcam 10. Computers need to be properly maintained to get work done well . Which of the following is one great reason why computer maintenance is a good idea ? A. It increases the likelihood of data loss . B. detects Issues early C. It opens a door for viruses and malware . C. It slows down the computer . 11. Cleaning the computer monitor and / or television is essential to prolong its usefulness . Which of the following is not an effective way to do it ? A. Not spraying liquid directly on the screen B. Using a dry , soft , lint - free cloth Using a solution of mild soap and water C. Using solvents or abrasives 12. What stage refers to the remaining activities that complete the guest cycle ? A. Post departure B. Post - registration C. Registration D. Reservation13. Most hotels and companies are income generating Which of the following refers to the daily business or sales report of a business or company ? A. Calculation report B. Financial report C. Group status report D. Income report 14. Hazards come in different types or forms . Which of the following hazards deals with the things that can cause damage to one's mental health ? A Biological B. Chemical C. PhysicalPsychological 15. If medium lines are drawn at 45 degrees to show the interior view of solid areas of cutting plane lines , what do you call these lines ? A. Cutting plane line B. Leader line C. Phantom line D. Section line​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#performance-task-50-of-final-grade-create-an-artwork-featuring-the-essence-of-learning-mathematics-using-the-concepts-of-points-lines-and-planes-include-the-concepts-of-the-angle-relationships-fo">18.
+                                            PERFORMANCE TASK: (50% of final grade) Create an artwork featuring the essence of learning mathematics using the concepts of points, lines and planes. Include the concepts of the angle relationships formed when parallel lines are cut by transversal Write a short description of your work at the back. The following materials might help you create this project. (You may use other materials if you wish) 2. Clean sheet of long bond paper 4. Ruler 2. Pencil 5. Coloring materials 3. Protractor 6. Compasskht example lng p need q lng rn​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="identify-what-view-located-the-following-viewsexample-1-center-line-top-view2-leader-line-3-extension-line-4-dimension-line-5-object-line-6-centre-line-7-hidden-line-8-long-br">
+                            1. Identify what view located the following views
+Example 1. Center line - Top view
+2. Leader line - 
+3. Extension line -
+4. Dimension line -
+5. Object line -
+6. Centre line -
+7. Hidden line -
+8. Long break line -
+9. Cutting plane line -
+10. Section line -</h2><br />
+                        <p><strong>answer</strong></p><p>2.front view</p><p>3.right side view</p><p>4.left side view</p><p>5.visible line</p><p>6.symmetrical objects</p><p>7.isometric view</p><p>8.phantom lines</p><p>9.cylindrical</p><p>10.dark lines/plane lines</p><p></p><p>pacorect na lang po</p><br />
+                                            <h2 class="ez-toc-section" id="15-the-formula-in-calculating-an-area-of-rectangle-is-as-b4-side-cl-d-prade-prism-whose-faces-are-congruent-one-of-its-examples-is-dice-con-b-cube-c-cylinder-dlcosahed-17-this-type-of-quadrilatera">
+                            2. 15. The formula in calculating an Area of Rectangle is AS B4 side CL D. prade prism whose faces are congruent. One of its examples is dice Con B Cube C Cylinder Dlcosahed 17. This type of quadrilateral has four equal sides and four equal angles Asosceles trapezoid B. Square C. Rectangle 18. A concave, spring-steel blade measuring tool used for accurately measuring curved sur A Protractor B. Triangles C. Tape Ruler D. T-Square 19. Athio ine that represents the outline of the object, also known as the object line denne B. Visible line C. Cutting-plane line D. Pha 20 Atines to show the surface that has been cut they are spaced evenly at 45 deg to make shaded effect Center ine B. Extension line C. Leader line DSee 21 Anong the following Alphabet of lines which has thick line wight A Long-break line B. Dimension line C. Short-break line 0. Center Line 22 Among the following Alphabet of lines which has medium line weight A Hidden line B. Visible line C. Cutting-plane line D Pharor 23 The following are three planes of projection except A Frontal plane B. Horizontal plane C Side plane D. Profile plane type of oblique drawing uses full size on its width, depth or length B Cavalier C General D. All the choice​</h2><br />
+                        <p><strong>Answer:</strong></p><p>15.A</p><p>16.C</p><p>17.B</p><p>18.A</p><p>19.B</p><p>20.A</p><p>21.C</p><p>22.A</p><p>23.B</p><p><strong>Step-by-step explanation:</strong></p><p>sana po makatulong;)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="5sheet-ofpaper1-which-of-the-following-is-defined-as-an-exact-location-in-spacec-planea-line-segment-b-midpoint2-which-is-a-part-of-a-line-that-is-bounded-by-two-endpointsc-line-portiona-cut-li">
+                            3. 5sheet ofpaper1. Which of the following is defined as an exact location in spaceC. planeA. line segment B. midpoint2. Which is a part of a line that is bounded by two endpoints?C. line portionA cut-lineB. line piece3. Which object is an example of a straightedge used to draw strC. needleA. ballB. box4. It is a straight path that goes on without end in two directionA. lineB. plane5. Which of the following is a point that divides a line segmentA. endpoint B. interiorC. midpointWhat do you call a flat surface that extends forever in all dirA. angleB. areaC. rayC. plane​</h2><br />
+                        <p><strong>Answer:</strong></p>1.A2.A3.B4.C5. C<p><strong>Step-by-step explanation:</strong></p>hope helps you☺️<br />
+                                            <h2 class="ez-toc-section" id="1-which-of-the-following-is-defined-as-an-exact-location-in-spacea-line-segmentb-midpoint-c-planed-point2-which-is-a-part-of-a-line-that-is-bounded-by-two-endpointsa-cut-lineb-line-piecec-lin">
+                            4. 1. Which of the following is defined as an exact location in space?A line segmentB. midpoint C. planeD. point2. Which is a part of a line that is bounded by two endpoints?A cut-lineB. line pieceC. line portionD. line segment3. Which object is an example of a straightedge used to draw straight lines?A ballB. boxC. needleD. ruler4. It is a straight path that goes on without end in two directions. What is it?A lineB. planeD. triangle5. Which of the following is a point that divides a line segment into two equal parts?B. interiorA. endpointC. midpointD. vertex6. What do you call a flat surface that extends forever in all directions?A. areaB. angleC. surface areaD. plane​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.C</p><p>2.D</p><p>3.D</p><p>4.A</p><p>5.C</p><p>6.D</p><p>IWAN KULANG DYAN</p><br />
+                                            <h2 class="ez-toc-section" id="1-vertical-angles-formed-by-intersecting-lines-are-congruent-a-linear-pair-theoremb-vertical-angles-theoremc-corresponding-angles-theorem2-if-two-parallel-lines-are-cut-by-a-transversal-then-cor">
+                            5. 1. Vertical angles formed by intersecting lines are congruent.A. Linear Pair TheoremB. Vertical Angles TheoremC. Corresponding Angles Theorem2. If two parallel lines are cut by a transversal, then corresponding angles are congruent.A. Corresponding Angles Postulate B. Perpendicular Transversal TheoremC. Linear Pair3. Find the value of x so that two lines are parallelA. 52B. 72(x + 76)c. 62M(14 + 2x)4. From question No. 3. (x +76)° is theof angie (14 + 2x)A. Alternate Exterior Angle B. Alternate Interior Angle C. Intersecting Lines5. Lying on the same plane.A. Congruent AnglesC. LinearB. Coplanar6. Two angles that form linear pair areA. CoplanarB. CongruentC. Supplementary7.The illustration is an example ofA. Linear PairB. Vertical AngleC. Supplementary Anglenent​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B</p><p>2. A</p><p>3. C</p><p>4. A</p><p>5. B</p><p>6. B</p><p> 7. B</p><p>8. C</p><p>9. A</p><p>10. B</p><br />
+                                            <h2 class="ez-toc-section" id="1-vertical-angles-formed-by-intersecting-lines-are-congruent-a-linear-pair-theoremb-vertical-angles-theoremc-corresponding-angles-theorem2-if-two-parallel-lines-are-cut-by-a-transversal-then-cor">
+                            6. 1. Vertical angles formed by intersecting lines are congruent.A. Linear Pair TheoremB. Vertical Angles TheoremC. Corresponding Angles Theorem2. If two parallel lines are cut by a transversal, then corresponding angles are congruent.A. Corresponding Angles Postulate B. Perpendicular Transversal TheoremC. Linear Pair3. Find the value of x so that two lines are parallelA. 52B. 72(x + 76)c. 62M(14 + 2x)4. From question No. 3. (x +76)° is theof angie (14 + 2x)A. Alternate Exterior Angle B. Alternate Interior Angle C. Intersecting Lines5. Lying on the same plane.A. Congruent AnglesC. LinearB. Coplanar6. Two angles that form linear pair areA. CoplanarB. CongruentC. Supplementary7.The illustration is an example ofA. Linear PairB. Vertical AngleC. Supplementary AnglenentPa help follow ko makakasagot❤​</h2><br />
+                        <p><strong>Answer:</strong></p><p>vertical angles theorem</p><br />
+                                            <h2 class="ez-toc-section" id="9-miscellaneous-equipment-are-the-things-that-are-nor-obligatory-but-make-a-good-working-environment-for-the-worker-which-of-the-following-is-an-example-of-miscellaneous-equipment-a-office-stati">
+                            7. 9. Miscellaneous equipment are the things that are nor obligatory but make a good working environment for the worker . Which of the following is an example of miscellaneous equipment ? A. Office stationery B. Printer C. Shredder D. Webcam 10. Computers need to be properly maintained to get work done well . Which of the following is one great reason why computer maintenance is a good idea ? A. It increases the likelihood of data loss . B. detects Issues early C. It opens a door for viruses and malware . C. It slows down the computer . 11. Cleaning the computer monitor and / or television is essential to prolong its usefulness . Which of the following is not an effective way to do it ? A. Not spraying liquid directly on the screen B. Using a dry , soft , lint - free cloth Using a solution of mild soap and water C. Using solvents or abrasives 12. What stage refers to the remaining activities that complete the guest cycle ? A. Post departure B. Post - registration C. Registration D. Reservation13. Most hotels and companies are income generating Which of the following refers to the daily business or sales report of a business or company ? A. Calculation report B. Financial report C. Group status report D. Income report 14. Hazards come in different types or forms . Which of the following hazards deals with the things that can cause damage to one's mental health ? A Biological B. Chemical C. PhysicalPsychological 15. If medium lines are drawn at 45 degrees to show the interior view of solid areas of cutting plane lines , what do you call these lines ? A. Cutting plane line B. Leader line C. Phantom line D. Section line​</h2><br />
+                        <p><strong>Answer:</strong></p><p>anong grades po ba yan</p><p><strong>Explanation:</strong></p><p>#brainly Challenge</p><br />
+                                            <h2 class="ez-toc-section" id="33-represent-the-following-using-real-life-examples-i-point-ii-line-iii-plane-a-i-edge-of-a-foot-rule-ii-tip-of-a-pencil-iii-a-sheet-of-paper-b-i-a-sheet-of-paper-ii-edge-of">
+                            8. 33. Represent the following using real-life examples: (i) point, (ii) line, (iii) plane. A. (i) edge of a foot rule, (ii) tip of a pencil, (iii) a sheet of paper B. (i) a sheet of paper, (ii) edge of a foot rule, (iii) tip of a pencil C. (i) tip of a pencil, (ii) edge of a foot rule, (iii) a sheet of paper D. (i) a sheet of paper, (ii) tip of a pencil, (iii) edge of a foot rule 34. What is the sum of the interior angles of any quadrilateral? A. 900° B. 720° C. 540° D. 360° 35. The ratio of an interior angle and an exterior angle of a regular polygon is 3:2. How many sides does the polygon have? A. 10 B. 8 C. 6 D. 5 36. In Figure 3, point B is the center of the bigger circle and point C is the center of the smaller circle. Diameter AD passes through points B and C. If diameter AD measures 20 cm, what is the area of circle C? A. 78.5 cm Figure 3 B. 314 cm2 C. 706.5 cm? D. 1256 cm2 37. What must be the angle cut of the wood pieces if you want to join them to create a hexagonal wooden frame? A. 60-degree angle cut B. 45-degree angle cut C. 30-degree angle cut D. 15-degree angle cut 38. Figure 4 is a net of square pyramid. If the 4 triangular surfaces are isosceles triangles and angle A measures 44", what is the measure of ZABC? A. 128° B. 136° Figure 4 C. 178° D. 226​</h2><br />
+                        <p><strong>Answer:</strong></p><p>31. A</p><p>32.C</p><p>33.A</p><p>34.D</p><p>35.B</p><p>36.B</p><p>37.A</p><p>38.D</p><p><strong>Step-by-step explanation:</strong></p><p>Sane answer to me.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directionsa-read-the-questions-carefully-write-the-letter-of-the-correct-answer-on-the-spaceprovided-_____1-which-of-the-following-represents-pointa-edge-of-a-ruler-b-guitar-string-c-tip-of">
+                            9. Directions
+A. Read the questions carefully. Write the letter of the correct answer on the space
+provided.
+_____1. Which of the following represents point?
+A. Edge of a ruler B. Guitar string C. Tip of a pen D. Wall
+_____2. It is the side of an angle.
+A. Line B. Ray C. Segment D. Plane
+_____3. It is a subset of a line that can be measured and ends with two endpoints.
+A. Arrow B. line C. Ray D. Segment
+_____4. Which of the following angle measures is an example of acute angle?
+A. 75 0 B. 90 0 C. 100 0 D. 180 0
+_____5. What do you call an angle that measures greater than 90 0 ?
+A. Acute angles B. Obtuse angles C. Right Angles D. Straight angles
+_____6. Which of the following represents line?
+A. Corner of a table B. rope C. Tip of a needle D. Mirror
+_____7. What geometric idea is pictured by a page of a newspaper?
+A. Line B. Ray C. Point D. Plane
+_____8. Which of the following represents a plane?
+A. B. C. D.
+_____9. A strand of the hair is a representation of?
+A. Point B. Line C. Plane D. None of the a
+___10. What kind of angle is being represented by figure?
+A. Acute angles B. Obtuse angles C. Right Angles D. Straight angles
+_____11. Complementary angles measures?
+A. 90 o B. 180 o C. 120 o D. 360 o
+_____12. If the sum of two angles is equal to 180 o , then these are known as?
+A. Complementary Angles C. Linear Pair Angles
+B. Supplementary Angles D. Congruent Angles
+_____13. Adding the measures of two adjacent angles resulting to a sum of 180 o . These
+angles are known as?
+A. Supplementary Angles C. Linear Pair Angles
+B. Congruent Angles D. Complementary Angles
+_____14. These are intersecting lines that form right angles.
+A. Parallel B. Perpendicular C. Vertical D. Congruent
+_____15. Lines that do not intersect.
+A. Parallel B. Perpendicular C. Vertical D. Congruent Angles
+_____16.∠A and ∠B are complementary angles. If ∠A=52 o , what is the ∠B?
+A. 38 o B. 52 o C. 142 o D. 150 o
+____17. If a pair of parallel lines is cut by a transversal, how many angles are formed?
+A. 4 B. 6 C. 8 D. 12
+For items 8-10 refer to the figure.
+_____18. How many vertical angles are formed?
+A. 3 B. 4 C. 5 D. 6
+_____19. If m∠3 =70 o , Find m∠2
+A. 20 o B. 70 o C. 90 o D. 110 o
+_____20. If m∠6 =42 o , Find m∠8
+A. 42 o B. 48 o C. 132 o D. 24</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.C</p><p>2.B</p><p>3.B</p><p>4.D</p><p>5.D</p><p>6.C</p><p>7.B</p><p>8.B</p><p>9.A</p><p>10.A</p><p>11.B</p><p>12.C</p><p>13.B</p><p>14.A</p><p>15.D</p><p>16.C</p><p>17.B</p><p>18.C</p><p>19.A</p><p>20.B</p><br />
+                                            <h2 class="ez-toc-section" id="a-18-whats-fact-about-detail-drawing-detail-drawings-are-created-on-standard-paper-sizes-b-a-detail-drawing-provides-a-detailed-description-of-an-object-a-detail-drawing-is-a-tool-used-by-engin">
+                            10. a. 18. What's fact about detail drawing? Detail drawings are created on standard paper sizes. b. A detail drawing provides a detailed description of an object. A detail drawing is a tool used by engineers to communicate their designs to manufacturers and to preserve their work for future generations. d. All of the choices are correct. C.I. TRUE or FALSE Instruction: Write the whole word TRUE if you agree with the statement while FALSE if not. Write your answer on the blank space provided. (Please use this paper as your answer sheet) 1. In the General Assembly drawings, all parts are drawn in their working position. This includes orthographic drawings of assembled products, parts lists, and related data needed in manufacturing process.2. An Assembly drawing conveys the completed shape of the product, overall dimensions, relative position of each part and the functional relationship among various components. 3. Working drawings are composed according to industry standards so that all the information is easily and clearly understood, and standard conventions and units are used. 4. There are two distinctive types of working drawings; the Detail and Assembly drawings. 5. A Detail Assembly drawing shows how all components are assembled and provides all the necessary details, dimensions and joining techniques to fully assemble all or part of the project. 6. Exploded, General, Layout, Detail Assembly drawings are examples of a Detail Working drawings 7. In the Layout Assembly drawing, the parts are separately displayed, but they are aligned according to their assembly positions and sequences. 8. The Exploded assembly drawing shows rough preliminary design ideas sometimes in a sketch form. 9. A Detail Assembly drawing has several detailed drawings within it. 10. Working drawings are drawings used as a reference or guide in the manufacture of a product. 11. Half Section is obtained when the cutting-plane extends entirely through the object in a straight line and the front half of the object is totally. 12. Full Section refers to one quart of the object to be cut or removed. 13. In constructing Assembly Drawings, if there are intemal assemblies, sectional views should be used. 14. Sectional view is a method of drawing presentation showing the interior part part of the building especially when the inner parts are complicated. 15. Dimensions in detailed drawing should be shown clearly.​​</h2><br />
+                        <p><strong>Answer:</strong></p><p>do you think am a robot?</p><p><strong>Explanation:</strong></p><p><strong>$</strong><strong>/</strong><strong>%</strong><strong>/</strong><strong>/</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="i-true-or-false-instruction-write-the-whole-word-true-if-you-agree-with-the-statement-while-false-if-not-write-your-answer-on-the-blank-space-provided-please-use-this-paper-as-your-answer-sheet">
+                            11. I. TRUE or FALSE Instruction: Write the whole word TRUE if you agree with the statement while FALSE if not. Write your answer on the blank space provided. (Please use this paper as your answer sheet) 1. In the General Assembly drawings, all parts are drawn in their working position. This includes orthographic drawings of assembled products, parts lists, and related data needed in manufacturing process.2. An Assembly drawing conveys the completed shape of the product, overall dimensions, relative position of each part and the functional relationship among various components. 3. Working drawings are composed according to industry standards so that all the information is easily and clearly understood, and standard conventions and units are used. 4. There are two distinctive types of working drawings; the Detail and Assembly drawings. 5. A Detail Assembly drawing shows how all components are assembled and provides all the necessary details, dimensions and joining techniques to fully assemble all or part of the project. 6. Exploded, General, Layout, Detail Assembly drawings are examples of a Detail Working drawings 7. In the Layout Assembly drawing, the parts are separately displayed, but they are aligned according to their assembly positions and sequences. 8. The Exploded assembly drawing shows rough preliminary design ideas sometimes in a sketch form. 9. A Detail Assembly drawing has several detailed drawings within it. 10. Working drawings are drawings used as a reference or guide in the manufacture of a product. 11. Half Section is obtained when the cutting-plane extends entirely through the object in a straight line and the front half of the object is totally. 12. Full Section refers to one quart of the object to be cut or removed. 13. In constructing Assembly Drawings, if there are intemal assemblies, sectional views should be used. 14. Sectional view is a method of drawing presentation showing the interior part part of the building especially when the inner parts are complicated. 15. Dimensions in detailed drawing should be shown clearly.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.True</p><p>2.True</p><p>3.True</p><p>4.False</p><p>5.True</p><p>6.False</p><p>7.True</p><p>8.True</p><p>9.False</p><p>10.False</p><p>11.False</p><p>12.True</p><p>13.False</p><p>14.True</p><p>15False</p><br />
+                                            <h2 class="ez-toc-section" id="additional-activities-directions-this-is-an-example-of-a-working-machine-drawing-label-the-following-items-with-the-corresponding-alphabet-or-line-choose-your-answers-on-the-box-provided-below-wri">
+                            12. Additional Activities DIRECTIONS: This is an example of a working machine drawing. Label the following items with the corresponding Alphabet or Line, Choose your answers on the box provided below. Write your answers on your TLE - Technical Drafting Activity Nombook Center Line Section Line Visible Line Long Break Line Hidden Line Cutting Plane Line Extension Line Dimension Line E NOU THROUGH NOUL HOLE, A HOLES 1000 in 1 200 in 10.00 - -20.00 PLAN FRONT 1. 2. 5. 6. 6. 7. 8. 3 4.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>PLAN.                             FRONT</p><p>1.EXTENSION.               1.CUTTING PLANE</p><p>2.VISIBLE.                     2.CENTER</p><p>3.HIDDEN                     3.LONG BREAK</p><p>4.DIMENSION               4.SECTION </p><p><strong>Explanation:</strong></p><p>PA BRAINLYS PO</p><p><strong>Answer:</strong></p><p>PLAN.                                  </p><p>1.HIDEN</p><p>2.EXTENSION</p><p>3.VISIBLE</p><p>4DIMENSION</p><p></p><p></p><p>FRONT</p><p>5.CENTER</p><p>6.CUTTING</p><p>7.LONG BREAK</p><p>8.SECTION</p><p><strong>Explanation:</strong></p><p>SANA PO MAKA TOLONG</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="direction-choose-the-best-answer-and-write-it-on-the-space-provided1-what-term-is-best-used-to-describing-such-drawing-accomplished-without-the-use-of-drawing-instrumentsb-painting2-which-among-o">
+                            13. Direction: Choose the best answer and write it on the space provided1. What term is best used to describing such drawing accomplished without the use of drawing instruments?B. Painting2. Which among of the given line is produced by a left handed?C. SketchD. PortraitА.D.B.C.3. How many view does a certain object has?A. 2B.4C6D.84.What kind of line is drawn applying downward strokes?A. SlantedB. HorizontalC. StraightD. Vertical5. What view is behind the front view?A. RearB. TopC. Left sideD. Bottom6. Which line is drawn from either left to right or vice versa?A. HorizontalB. Line segmentC. VerticalD. Slanting7. WORD ANALOGY: Orthographic Projection - line drawn on a flat surface /- shows vievof an object from 90 degrees angleA. SketchB. Free hand drawing C. Orthographic view D. Alphabets of line8. What is form when a plane of projections meets each other?A. LineB. ViewsC. AngleD. Quadrant9. It refers to the upright distance between two horizontal planes.A. DepthB. WithC. HeightD. Line10. WORD ANALOGY: Center line- represents the axis/represents edges that cannot beSeen?A. Dimension lineB. Visible lineC. Hidden lineD. Long break line11. Which line is drawn downward with inclined strokes?A. VerticalB. VisibleC. HorizontalD. Diagonal12. It is the erect distance between two frontal planes.A. DepthB. HeightC. WidthD. Size13. Which among of the illustration is a curved line?AB.C.14. Which among of the quadrants produce in a plane of projection is/are utilize in drafting purpoA. FirstB. SecondC. ThirdD. First and Third15. This type of line shows the details of the part that has been broken out.A. Section lineB. Long break line C. Dimension line D. Extension line16. Which among of the example is a hidden line?A.B. -C. ---D.17. It is a skinny line that outspreads from the object in order to show length limits.A. Extension lineB. Visible lineC. Center lineD. Phantom line18. The following are the planes of projection used in orthographic drawing EXCEPT:A. Rear planeB. Horizontal plane C. Profile plane D Frontal plane19. Which is an example of a visible line?С.D.20. WORD ANALOGY: Phantom line-shows position (s) of part of an object that moves/- indicate an imaginary cut through an objectA. Extension lineB. Cutting plane line C. Hidden line D. Short-break line​</h2><br />
+                        <p>1.a</p><p>2.c</p><p>3.a</p><p>4c.</p><p>5.d</p><p>6.d</p><p>7.d</p><p>8.d</p><p>9.a</p><p>10.a</p><p>11.b</p><p>12.b</p><p>13.a</p><p>14 b</p><p>15.a</p><p>16.b</p><p>17b.</p><p>18.b</p><p>19.a</p><p>20.b</p><br />
+                                            <h2 class="ez-toc-section" id="b-multiple-choicedirections-choose-the-letter-of-your-answer-write-it-on-the-space-provided-before-each1-carpenters-are-using-different-classes-of-tools-in-carpentry-an-example-of-a-measura-gogg">
+                            14. B. Multiple ChoiceDirections: Choose the LETTER of your answer. Write it on the space provided before each1. Carpenters are using different classes of tools in carpentry. An example of a measurA. gogglesB. ChiselC. Steel ruleD. Chalk lin2. How about lining or marking tool?A. gogglesD. Chalk linB. ChiselC. Steel rule3. Tools that have sharp edges and are used to carve and cut woods and a member ofA. gogglesB. ChiselC. Steel ruleD. Chalk lin4. Example of equipment worn by a carpenter or worker to avoid potential harm that miA. gogglesB. ChiselC. Steel ruleD. Chalk li5. Which of the following tools is used in sharpening tooth cutting tools?A. electric grinderB. oilstoneC. sandpaperD. triangul6. Which of the following is the correct procedure in sharpening edge- cutting tools?A. grinding - honing- whettingC. honing- whetting- grindingB. grinding - whetting- honingD. whetting- honing-grinding7. What is the classification of tools that are condemned?A. functionalB. non-functionalC. to be repaired.D. to be re8. What do you call to a liquid substance introduced between two movingA. glueB. lubricantparts to reduD. waterC. sealant9. What is the process of reshaping cutting edge of a plane or chisel to remove the nicB. GrindingA. filingC. JointingD. whettir10. What kind of tool is used in setting the teeth of a saw?B. saw setA. plierC. triangular slim taper fileD​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Chalk In </p><p></p><p>2. Chalk In </p><p></p><p>3. Chisel </p><p></p><p>4. Goggles </p><p></p><p>5. Electric Grinder </p><p></p><p>6. Grinding Honing Whetting</p><p></p><p>7. non functional </p><p></p><p>8. Lubricant </p><p></p><p>9. Filling </p><p></p><p>10. Saw set</p><br />
+                                            <h2 class="ez-toc-section" id="test-tildirections-put-a-check-if-the-statement-is-correct-and-cross-x-if-it-is-wrongwrite-your-answer-on-the-space-provided-before-the-number-12-simple-machines-are-tools-that-make-work-easier-1">
+                            15. TEST TILDirections: Put a check) if the statement is correct and cross (X) if it is wrongWrite your answer on the space provided before the number.12. Simple machines are tools that make work easier.13. The six types of simple machines make our life easier every day.14. There are twelve types of simple machines.15. Simple machines are not important.16. A pulley is used to lift something up specially to lift the heavy objects.17. Lever is a device consist fixed movable point called the fulcrum.18. The lever makes it harder to lift heavy materials, remove tight objects and cut items.19. There are five parts of lever that are very helpful20. Wedge is a double inclined plane that is sharpened to an end.21. The fork, knife, peeler, nail, pin and needle are examples of wedge.22. Cars, pencil sharpeners, fans, and in-line skates all use the wheel and axle23. Lifting the object using an inclined plane means you use less force to do work.24. Inclined plane is a flat surface with one end higher than the other.25. The spiral ridges are referred to as thread and the distance each thread is referred to as pitch.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>12.✓</p><p>13.✓</p><p>14.X</p><p>15.X</p><p>17.✓</p><p>18.X</p><p>19.X</p><p>20.✓</p><p>21.✓</p><p>22.✓</p><p>23.X</p><p>24.✓</p><p>25.✓</p><br />
+                                            <h2 class="ez-toc-section" id="1-multiple-choice-write-the-letter-of-your-choice-in-your-answer-sheet-1-which-angle-has-single-measure-a-right-angle-b-acute-c-obtuse-d-all-of-these-2-which-is-not-an-undefined-term-in-geomet">
+                            16. 1. Multiple choice: Write the letter of your choice in your answer sheet. 1. Which angle has single measure? a right angle b. acute c obtuse d. all of these 2. Which is NOT an undefined term in geometry? a line b. angle c. plane d. point 3. What is used to name a point? a. one cursive lowercase letter c. one uppercase letter b. one lowercase letter d. one uppercase letter 4. Which has no width but has length and extends indefinitely on both sides? a. angle b. plane c. ray d. line 5. Which is a subset of a line that has one endpoint and extends indefinitely on one side? a ray b. line segment cline d. angle 6 Which Illustrate a ray? a C d. 7. Which shows a line segment? 9 d b 8. An angle that measures less than 90' but more than o' is a /an a. obtuse angle b. right angle c. acute angle d. straight angle 9. If m 130' then it is a/an. a. acute angle b. right angle C. straight angle d. obtuse angle 10. What instrument is used to measure an angle? a protractor b. measuring tape c.ruler d. compass 11. Two angles share a common side and a vertex. Which of the following best describes the pair of angles if their sum is 90°? a. adjacent and complementary c. non-adjacent and complementary b. adjacent and supplementary d. non-adjacent and supplementary 12. Which of the following statements is true? a. In parallel lines, the distance between the two lines is fixed and the two lines are going in the same direction. b. Perpendicular lines are lines that meet at a point. When two lines intersect, they define angled at the point of Intersection c. Skew lines are lines that are coplanar and can never intersect at any given point. d. Two lines intersect at more one point and they define angles at the point of intersection. 13. Which pair of angles are linear pair? Aand 4 D. 2 und 45 14. Which of the following is the best example of pairs of lines that are parallel? à, consecutive sides of a window c. railway line crossing b. intersection of roadways d. two opposite edges of a door 15. The measure of a complement of an angle is equal to the twice the measure of an angle. What is the measure of the supplement of the angle? b.130 c. 140 d. 150 16. Which of the following statements is CORRECT when parallel lines are cut by a transversal? a. The sum of the degree of corresponding angles is 180° b. The sum of the degree measure of complementary angle is 180° c. The angles is vertical pair are acute. a. 120 d. Corresponding angles are congruent. 17. Which of the statement below is ALWAYS TRUE? a. Any two acute angles are complementary,​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. <strong>D</strong><br />2. <strong>B</strong><br />3. <strong>C/D</strong> <strong>(Uppercase Letter)</strong><br />4. <strong>D</strong><br />5. <strong>A</strong><br />6. <br />7.<br />8. <strong>C</strong><br />9. <strong>D</strong><br />10. <strong>A</strong><br />11. <strong>A</strong><br />12. <strong>B</strong><br />13. <br />14. <strong>D</strong><br />15.<strong> B</strong><br />16. <strong>A</strong><br />17. <strong>A</strong><br /></p><p><strong>Step-by-step explanation:<br /><br /></strong>sana nakatulong,di ko kasi magets yung iba.Correct me if i'm wrong po pero i think tama naman yan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="9-miscellaneous-equipment-are-the-things-that-are-nor-obligatory-but-make-a-good-working-environment-for-the-worker-which-of-the-following-is-an-example-of-miscellaneous-equipment-a-office-stati">
+                            17. 9. Miscellaneous equipment are the things that are nor obligatory but make a good working environment for the worker . Which of the following is an example of miscellaneous equipment ? A. Office stationery B. Printer C. Shredder D. Webcam 10. Computers need to be properly maintained to get work done well . Which of the following is one great reason why computer maintenance is a good idea ? A. It increases the likelihood of data loss . B. detects Issues early C. It opens a door for viruses and malware . C. It slows down the computer . 11. Cleaning the computer monitor and / or television is essential to prolong its usefulness . Which of the following is not an effective way to do it ? A. Not spraying liquid directly on the screen B. Using a dry , soft , lint - free cloth Using a solution of mild soap and water C. Using solvents or abrasives 12. What stage refers to the remaining activities that complete the guest cycle ? A. Post departure B. Post - registration C. Registration D. Reservation13. Most hotels and companies are income generating Which of the following refers to the daily business or sales report of a business or company ? A. Calculation report B. Financial report C. Group status report D. Income report 14. Hazards come in different types or forms . Which of the following hazards deals with the things that can cause damage to one's mental health ? A Biological B. Chemical C. PhysicalPsychological 15. If medium lines are drawn at 45 degrees to show the interior view of solid areas of cutting plane lines , what do you call these lines ? A. Cutting plane line B. Leader line C. Phantom line D. Section line​</h2><br />
+                        <p><strong>Answer:</strong></p>9.C10.A11.B12.B13.A14.D15.C<p><strong>Explanation:</strong></p><p> I'm not sure</p><p></p><p><strong>Answer:</strong></p><p>9. B</p><p>10. C</p><p>11. A</p><p>12.A</p><p>13. C</p><p>14. B</p><p>15. B</p><br />
+                                            <h2 class="ez-toc-section" id="performance-task-50-of-final-grade-create-an-artwork-featuring-the-essence-of-learning-mathematics-using-the-concepts-of-points-lines-and-planes-include-the-concepts-of-the-angle-relationships-fo">
+                            18. PERFORMANCE TASK: (50% of final grade) Create an artwork featuring the essence of learning mathematics using the concepts of points, lines and planes. Include the concepts of the angle relationships formed when parallel lines are cut by transversal Write a short description of your work at the back. The following materials might help you create this project. (You may use other materials if you wish) 2. Clean sheet of long bond paper 4. Ruler 2. Pencil 5. Coloring materials 3. Protractor 6. Compasskht example lng p need q lng rn​</h2><br />
+                        <strong>IT</strong><strong> </strong><strong>SAYS</strong><strong> </strong><strong>TO</strong><strong> </strong><strong>WRITE</strong><strong> </strong><strong>AN</strong><strong> </strong><strong>ARTWORK</strong><strong>.</strong><strong> </strong><strong>RELATED</strong><strong> </strong><strong>TO</strong><strong> </strong><strong>MATHEMATICS</strong><strong> </strong><strong>LIKE</strong><strong> </strong><strong>POINTS</strong><strong>,</strong><strong> </strong><strong>LINES</strong><strong> </strong><strong>ANS</strong><strong> </strong><strong>PLANES</strong><strong>.</strong><strong> </strong><p></p><p><strong>THIS</strong><strong> </strong><strong>IS</strong><strong> </strong><strong>THE</strong><strong> </strong><strong>ARTWORK</strong><strong> </strong><strong>YOU</strong><strong> </strong><strong>SHOULD</strong><strong> </strong><strong>COPY</strong></p><p><strong>PRESS</strong><strong> </strong><strong>THE</strong><strong> </strong><strong>PICTURE</strong><strong> </strong></p><p><strong>GOODLUCK</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/luodbXhdTuI?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>technology_and_home_economics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/an-account-of-a-person-s-life-written-by-himself.html">An Account Of A Person s Life Written By Himself</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/quiz-on-newton-s-three-laws.html">Quiz On Newton s Three Laws</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/what-is-the-theme-of-the-taximan-s-story.html">What Is The Theme Of The Taximan s Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/quality-service-management-in-tourism-and-hospitality.html">Quality Service Management In Tourism And Hospitality</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/quiz-on-data-analysis.html">Quiz On Data Analysis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/paghimas-ng-ina-sa-ulo-ng-sanggol.html">Paghimas Ng Ina Sa Ulo Ng Sanggol</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/assembling-and-disassembling-of-pc.html">Assembling And Disassembling Of Pc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/this-refers-to-the-visible-part-of-the-culture.html">This Refers To The Visible Part Of The Culture</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/palitaw-drawing.html">Palitaw Drawing</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/kaisipan-mula-sa-cupid-at-psyche.html">Kaisipan Mula Sa Cupid At Psyche</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/gawain-ng-tatay-sa-bahay.html">Gawain Ng Tatay Sa Bahay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/rizal-in-france.html">Rizal In France</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/mga-kagamitan-panukat.html">Mga Kagamitan Panukat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/pangangailangan-ng-pamilya.html">Pangangailangan Ng Pamilya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/parte-ng-komunidad.html">Parte Ng Komunidad</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/how-to-start-scope-and-delimitation.html">How To Start Scope And Delimitation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/korean-counting-units.html">Korean Counting Units</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/chris-argyris-theory.html">Chris Argyris Theory</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/nanay-ni-rizal.html">Nanay Ni Rizal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://toptenstudi.github.io/kontribusyon-ng-pamumuhay.html">Kontribusyon Ng Pamumuhay</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://toptenstudi.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://toptenstudi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://toptenstudi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
